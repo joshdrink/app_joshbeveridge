@@ -1,0 +1,151 @@
+/* =============================================================================
+
+    // TYPOGRAPHY CSS
+    // Property of Josh Beveridge
+    // Authored by Josh Beveridge
+
+============================================================================= */
+
+/* Google Fonts ============================================================= */
+$font-roboto: 'Roboto', sans-serif;
+$font-droid: 'Droid Serif', serif;
+
+/* Typekit Fonts ============================================================ */
+
+/* Custom Fonts ============================================================= */
+
+/* Selection ================================================================ */
+::selection {
+    background: $black;
+    color: $white;
+}
+
+/* Headings ================================================================= */
+h1 {font-size: 2rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.4rem;}
+h5 {font-size: 1.3rem;}
+h6 {font-size: 1.2rem;}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $black;
+    font-family: $font-roboto;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 3rem 0 .5rem 0;
+
+    &:first-child {
+        margin: 0 0 .5rem 0;
+    }
+
+}
+
+/* Copy ===================================================================== */
+
+/* Body Font */
+p,
+a,
+strong,
+em,
+span,
+blockquote,
+article {
+    font-family: $font-droid;
+    margin: 1rem 0 2rem 0;
+}
+
+p {
+    color: rgba(0, 0, 0, .75);
+}
+
+hr {
+    border: none;
+    border-top: .1rem solid $red;
+    margin: 3rem 0;
+}
+
+blockquote {
+    border-left: .1rem solid $red;
+    margin: 2rem 2rem 2rem 0;
+    padding: 0 0 0 2rem;
+}
+
+/* Anchors */
+a,
+a:visited,
+a:link {
+    color: $red;
+}
+
+/* Buttons ================================================================== */
+.button,
+.button:focus,
+.button:active,
+.button:link,
+.button:visited,
+input[type='submit'] {
+    background: $black;
+    border-radius: 5rem;
+    color: $white;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.1rem 3rem 1.5rem 3rem;
+}
+
+button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inputs =================================================================== */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* Lists ==================================================================== */
+ul {
+
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+
+    dt {
+        display: none;
+    }
+
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Tables =================================================================== */
+
+/* Forms ==================================================================== */
+input {
+
+}
+
+textarea {
+    border: 1px solid $black;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    width: 100%;
+}
