@@ -110,8 +110,10 @@
         if (window.matchMedia("(orientation: portrait)").matches) {
             var navigationHeight = $('.navigation').outerHeight();
             var paneHeight = $('.pane').outerHeight();
+            var heroHeight = $('.hero').outerHeight();
             $('.navigation').css('height', navigationHeight + 'px');
             $('.pane').css('height', paneHeight + 'px');
+            $('.hero').css('height', heroHeight + 'px');
         }
 
     });
