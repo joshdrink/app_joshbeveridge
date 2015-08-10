@@ -106,6 +106,14 @@
             e.preventDefault();
         });
 
+        // Mobile Sizes ========================================================
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            var navigationHeight = $('.navigation').outerHeight();
+            var paneHeight = $('.pane').outerHeight();
+            $('.navigation').css('height', navigationHeight + 'px');
+            $('.pane').css('height', paneHeight + 'px');
+        }
+
     });
 
 })(jQuery);
