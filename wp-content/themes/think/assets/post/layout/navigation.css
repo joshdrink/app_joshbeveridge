@@ -235,8 +235,13 @@
                                 left: 0;
                                 transform: rotateY(-180deg);
                                 transition: all .3s ease .2s;
-                                width: 3rem;
+                                width: 2.5rem;
                                 z-index: 5;
+
+                                @media screen and (orientation: landscape) {
+                                    width: 3rem;
+                                }
+
                             }
 
                             img:last-child {
@@ -247,7 +252,12 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 3rem;
+                                width: 2.5rem;
+
+                                @media screen and (orientation: landscape) {
+                                    width: 3rem;
+                                }
+
                             }
 
                         }
@@ -259,7 +269,12 @@
                         position: relative;
                         transform: rotateY(0deg);
                         transition: all .3s ease;
-                        width: 3rem;
+                        width: 2.5rem;
+
+                        @media screen and (orientation: landscape) {
+                            width: 3rem;
+                        }
+
                     }
 
                     .flipper {
@@ -276,8 +291,13 @@
                             left: 0;
                             transform: rotateY(0deg);
                             transition: all .3s ease .2s;
-                            width: 3rem;
+                            width: 2.5rem;
                             z-index: 5;
+
+                            @media screen and (orientation: landscape) {
+                                width: 3rem;
+                            }
+
                         }
 
                         img:last-child {
@@ -288,7 +308,12 @@
                             left: 0;
                             transform: rotateY(-180deg);
                             transition: all .3s ease .2s;
-                            width: 3rem;
+                            width: 2.5rem;
+
+                            @media screen and (orientation: landscape) {
+                                width: 3rem;
+                            }
+
                         }
 
                     }
@@ -310,8 +335,13 @@
                                 left: 0;
                                 transform: rotateY(180deg);
                                 transition: all .3s ease .2s;
-                                width: 3rem;
+                                width: 2.5rem;
                                 z-index: 5;
+
+                                @media screen and (orientation: landscape) {
+                                    width: 3rem;
+                                }
+
                             }
 
                             img:last-child {
@@ -322,7 +352,12 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 3rem;
+                                width: 2.5rem;
+
+                                @media screen and (orientation: landscape) {
+                                    width: 3rem;
+                                }
+
                             }
 
                         }
