@@ -19,7 +19,7 @@
     <article>
         <div class='article-photo' style="background-image: url('<?php echo $thumb_url[0] ?>')">
             <div class='container'>
-                <h6>Published on <?php the_date('l, F j, Y') ?></h6>
+                <h6>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
                 <h1><?php the_title() ?></h1>
             </div>
         </div>
