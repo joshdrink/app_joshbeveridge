@@ -16,7 +16,7 @@
 	<!-- Site Meta Data ==================================================== -->
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Problem. Design. Solution.</title>
+	<title>I am lost.</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,9 +47,9 @@
 	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="msapplication-TileColor" content="#b91d47">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="theme-color" content="#ea0f6b">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Google Fonts ====================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -59,71 +59,6 @@
 
 </head>
 
-<?php
-
-    $nav_query = new WP_Query(array(
-        'posts_per_page'    => -1,
-        'post_type'         => 'post'
-    ));
-
-    $stylesheet_directory = get_bloginfo('stylesheet_directory') . '/assets/';
-
-?>
-
 <body <?php body_class(); ?>>
 
 	<?php $stylesheet_directory = get_bloginfo('stylesheet_directory') . '/assets/'; ?>
-
-	<!-- Navigation ============================================================ -->
-	<nav class='navigation'>
-
-	    <div class='pane'>
-
-			<section class='navigation-content navThink'>
-
-				<?php
-			        while ($nav_query->have_posts()) : $nav_query->the_post();
-			    ?>
-
-			    <a href='<?php the_permalink() ?>' class='post-preview'>
-					<h6>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
-	                <h1><?php the_title() ?></h1>
-					<?php the_excerpt() ?>
-				</a>
-
-			    <?php
-			        endwhile;
-			        wp_reset_postdata();
-			    ?>
-
-		    </section>
-
-		</div>
-
-	    <section class='menu'>
-	        <dl>
-	            <dt></dt>
-	            <dd><button id='navThink'>Think.</button></dd>
-	            <dd><button class='disable' id='navLearn'>Learn.</button></dd>
-	            <dd><button class='disable' id='navFollow'>Quest.</button></dd>
-	            <dd>
-	                <button id='navClose' class='close'>
-	                    <img src='<?php echo $stylesheet_directory ?>img/icon_circle.svg'>
-	                    <div class='flipper'>
-	                        <img src='<?php echo $stylesheet_directory ?>img/icon_jb.svg'>
-	                        <img src='<?php echo $stylesheet_directory ?>img/icon_x.svg'>
-	                    </div>
-	                </button>
-	            </dd>
-	        </dl>
-	    </section>
-
-	    <section class='navigation-content navLearn'>
-
-	    </section>
-
-	    <section class='navigation-content navFollow'>
-
-	    </section>
-
-	</nav>

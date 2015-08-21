@@ -76,6 +76,17 @@ a,
 a:visited,
 a:link {
     color: $red;
+    transition: color .3s ease;
+
+    &:hover {
+
+        @media screen and (orientation: landscape) {
+            color: $grey-dark;
+            transition: color .3s ease;
+        }
+
+    }
+
 }
 
 /* Buttons ================================================================== */

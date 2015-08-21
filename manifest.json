@@ -1,5 +1,5 @@
 {
-	"name": "Jb Design",
+	"name": "Thoughts",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -37,5 +37,8 @@
 			"type": "image\/png",
 			"density": "4.0"
 		}
-	]
+	],
+	"start_url": "http:\/\/joshbeveridge.com",
+	"display": "standalone",
+	"orientation": "portrait"
 }

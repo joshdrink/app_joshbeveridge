@@ -9,6 +9,7 @@
 /* Article ================================================================== */
 article {
     background: $white;
+    margin: 0;
     max-width: 100%;
     position: relative;
     width: 100vw;
@@ -78,7 +79,7 @@ article {
         }
 
         h6 {
-            color: $grey;
+            color: $grey-dark;
             font-size: .8rem;
             margin: 0;
         }
@@ -86,6 +87,7 @@ article {
     }
 
     .content {
+        background: $grey;
         z-index: 10;
 
         .container {

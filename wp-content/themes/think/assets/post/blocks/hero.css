@@ -8,7 +8,7 @@
 
 /* Hero ===================================================================== */
 .hero {
-    background: $white;
+    background: $grey;
     height: 100vh;
     max-width: 100%;
     position: relative;
@@ -21,6 +21,7 @@
 
     .logo {
         display: block;
+        margin: 0;
         position: absolute;
         top: 45%;
         left: 50%;
