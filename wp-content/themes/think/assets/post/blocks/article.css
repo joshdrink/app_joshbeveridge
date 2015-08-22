@@ -71,8 +71,9 @@ article {
             color: $grey;
             font-size: 2.3rem;
             font-weight: 900;
-            margin: 1rem 0 0 0;
+            margin: 2rem 0 0 0;
             padding: 0 0 2rem 0;
+            text-align: center;
 
             @media screen and (orientation: landscape) {
                 font-size: 3rem;
@@ -85,6 +86,7 @@ article {
             color: $grey-dark;
             font-size: .8rem;
             margin: 0;
+            text-align: center;
         }
 
     }
@@ -100,7 +102,7 @@ article {
 
             @media screen and (orientation: landscape) {
                 margin-bottom: 0;
-                padding: 5rem;
+                padding: 3rem 5rem 5rem 5rem;
             }
 
             *:first-child {
