@@ -63,7 +63,12 @@ p {
 hr {
     border: none;
     border-top: .1rem solid $red;
-    margin: 3rem 0;
+    margin: 2rem 0;
+
+    @media screen and (orientation: landscape) {
+        margin: 3rem 0;
+    }
+
 }
 
 blockquote {
