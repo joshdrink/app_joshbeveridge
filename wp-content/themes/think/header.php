@@ -54,6 +54,10 @@
 	<!-- Google Fonts ====================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
+	<!-- Typekit =========================================================== -->
+	<script src="//use.typekit.net/osi6lyk.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 	<!-- wp_head =========================================================== -->
 	<?php wp_head(); ?>
 

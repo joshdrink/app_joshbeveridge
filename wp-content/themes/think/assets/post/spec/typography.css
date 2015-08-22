@@ -9,6 +9,7 @@
 /* Google Fonts ============================================================= */
 $font-roboto: 'Roboto', sans-serif;
 $font-droid: 'Droid Serif', serif;
+$font-freight: 'freight-text-pro', serif;
 
 /* Typekit Fonts ============================================================ */
 
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-roboto;
     font-weight: 700;
     line-height: 1.2;
-    margin: 3rem 0 .5rem 0;
+    margin: 3rem 0 1.2rem 0;
 
     &:first-child {
         margin: 0 0 .5rem 0;
@@ -51,7 +52,7 @@ em,
 span,
 blockquote,
 article {
-    font-family: $font-droid;
+    font-family: $font-freight;
     margin: 1rem 0 2rem 0;
 }
 
