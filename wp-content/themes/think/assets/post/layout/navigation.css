@@ -8,7 +8,6 @@
 
 /* Navigation =============================================================== */
 .navigation {
-    box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
     height: 12vh;
     max-width: 100%;
     position: fixed;
@@ -28,12 +27,11 @@
 
         .pane {
             transform: translate3d(0, -88%, 0);
-            transition: transform .3s ease;
+            transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);
 
             @media screen and (orientation:landscape) {
-                box-shadow: -.1rem 0 .6rem rgba(0, 0, 0, .3);
-                transform: translate3d(-90%, 0, 0);
-                transition: transform .5s ease;
+                transform: translate3d(-86.66%, 0, 0);
+                transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);
             }
 
         }
@@ -42,7 +40,7 @@
 
     .pane {
         background: $white;
-        box-shadow: none;
+        box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
         height: 100vh;
         max-width: 100%;
         position: absolute;
@@ -55,20 +53,49 @@
 
         @media screen and (orientation:landscape) {
             max-width: none;
+            width: 75vw;
+        }
+
+        &:after {
+            background: $white;
+            content: '';
+            display: block;
+            height: 10%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate3d(0, 90%, 0);
+            width: 100%;
+            z-index: 10;
+
+            @media screen and (orientation:landscape) {
+                background: $white;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: auto;
+                transform: translate3d(90%, 0, 0);
+                width: 10%;
+                z-index: 10;
+            }
+
         }
 
         .post-preview {
-            box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
             display: block;
-            margin: 2rem auto;
-            padding: 1.5rem;
+            margin: 1rem auto 0 auto;
+            padding: 1rem 1rem 0 1rem;
             text-decoration: none;
             transition: all .3s ease;
             width: 90%;
 
             @media screen and (orientation: landscape) {
+                margin: 0;
                 padding: 2rem 5rem;
-                width: 65%;
+                width: 85%;
             }
 
             h1 {
@@ -91,6 +118,10 @@
                 transition: all .3s ease;
             }
 
+            hr {
+                margin-bottom: 0;
+            }
+
             p {
                 margin: 0;
                 transition: all .3s ease;
@@ -99,16 +130,33 @@
             &:hover {
 
                 @media screen and (orientation: landscape) {
-                    background: $red;
-                    transition: all .3s ease;
 
-                    h1,
-                    h6,
-                    p {
-                        color: $white;
+                    h1 {
+                        color: $red;
                         transition: all .3s ease;
                     }
 
+                }
+
+            }
+
+            &:first-child {
+
+                @media screen and (orientation: landscape) {
+                    padding: 5rem 5rem 2rem 5rem;
+                }
+
+            }
+
+            &:last-child {
+                padding: 1rem;
+
+                @media screen and (orientation: landscape) {
+                    padding: 2rem 5rem 5rem 5rem;
+                }
+
+                hr {
+                    display: none;
                 }
 
             }
@@ -174,7 +222,7 @@
                 }
 
                 &:first-of-type {
-                    margin: 0 .5rem 0 1rem;
+                    margin: 0 .5rem 0 1.5rem;
 
                     @media screen and (orientation:landscape) {
                         margin: 2rem 2rem 1.5rem 1rem;
@@ -225,7 +273,7 @@
                                 left: 0;
                                 transform: rotateY(-180deg);
                                 transition: all .3s ease .2s;
-                                width: 2.5rem;
+                                width: 2.2rem;
                                 z-index: 5;
 
                                 @media screen and (orientation: landscape) {
@@ -242,7 +290,7 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 2.5rem;
+                                width: 2.2rem;
 
                                 @media screen and (orientation: landscape) {
                                     width: 3rem;
@@ -259,7 +307,7 @@
                         position: relative;
                         transform: rotateY(0deg);
                         transition: all .3s ease;
-                        width: 2.5rem;
+                        width: 2.2rem;
 
                         @media screen and (orientation: landscape) {
                             width: 3rem;
@@ -281,7 +329,7 @@
                             left: 0;
                             transform: rotateY(0deg);
                             transition: all .3s ease .2s;
-                            width: 2.5rem;
+                            width: 2.2rem;
                             z-index: 5;
 
                             @media screen and (orientation: landscape) {
@@ -298,7 +346,7 @@
                             left: 0;
                             transform: rotateY(-180deg);
                             transition: all .3s ease .2s;
-                            width: 2.5rem;
+                            width: 2.2rem;
 
                             @media screen and (orientation: landscape) {
                                 width: 3rem;
@@ -325,7 +373,7 @@
                                 left: 0;
                                 transform: rotateY(180deg);
                                 transition: all .3s ease .2s;
-                                width: 2.5rem;
+                                width: 2.2rem;
                                 z-index: 5;
 
                                 @media screen and (orientation: landscape) {
@@ -342,7 +390,7 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 2.5rem;
+                                width: 2.2rem;
 
                                 @media screen and (orientation: landscape) {
                                     width: 3rem;
@@ -376,13 +424,12 @@
 
         @media screen and (orientation:landscape) {
             height: 100%;
-            width: 90%;
         }
 
         &.active {
             opacity: 1;
             transform: translate3d(0, 0, 0);
-            transition: opacity .3s ease .5s, transform 0s ease;
+            transition: opacity .3s ease 1s, transform 0s ease;
         }
 
     }

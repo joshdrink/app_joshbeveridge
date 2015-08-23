@@ -93,6 +93,7 @@
 					<h6>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
 	                <h1><?php the_title() ?></h1>
 					<?php the_excerpt() ?>
+					<hr>
 				</a>
 
 			    <?php

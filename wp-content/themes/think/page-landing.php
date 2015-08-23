@@ -29,7 +29,7 @@
     </section>
 
     <!-- Article =========================================================== -->
-    <a id='article'></a>
+    <a id='recent'></a>
 
     <?php
         while ($landing_query->have_posts()) : $landing_query->the_post();

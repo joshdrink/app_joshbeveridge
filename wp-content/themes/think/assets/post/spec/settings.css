@@ -21,7 +21,7 @@
 }
 
 body {
-    background: rgba(250, 250, 250, 1);
+    background: rgba(245, 245, 245, 1);
 
     &.stop {
         overflow-y: hidden;
