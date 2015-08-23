@@ -140,14 +140,6 @@
 
             }
 
-            &:first-child {
-
-                @media screen and (orientation: landscape) {
-                    padding: 5rem 5rem .5rem 5rem;
-                }
-
-            }
-
             &:last-child {
                 padding: 1rem;
 
