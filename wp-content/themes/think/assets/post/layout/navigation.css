@@ -203,8 +203,8 @@
 
                 @media screen and (orientation:landscape) {
                     display: block;
-                    margin: 1.5rem 2rem 1.5rem 1rem;
-                    text-align: right;
+                    margin: 1.5rem 0;
+                    text-align: center;
                     transition: color .3s ease;
 
                     &:hover button{
@@ -223,7 +223,7 @@
                     }
 
                     &.disable {
-                        color: $grey;
+                        color: $disabled;
                     }
 
                 }
@@ -232,7 +232,7 @@
                     margin: 0 .5rem 0 1.5rem;
 
                     @media screen and (orientation:landscape) {
-                        margin: 2rem 2rem 1.5rem 1rem;
+                        margin: 2rem 0 1.5rem 0;
                     }
 
                 }

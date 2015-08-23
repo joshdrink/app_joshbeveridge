@@ -105,6 +105,18 @@
 
 		    </section>
 
+			<section class='navigation-content navLearn'>
+
+		    </section>
+
+		    <section class='navigation-content navQuest'>
+
+		    </section>
+
+			<section class='navigation-content navVault'>
+
+		    </section>
+
 		</div>
 
 	    <section class='menu'>
@@ -112,7 +124,8 @@
 	            <dt></dt>
 	            <dd><button id='navThink'>Think.</button></dd>
 	            <dd><button class='disable' id='navLearn'>Learn.</button></dd>
-	            <dd><button class='disable' id='navFollow'>Quest.</button></dd>
+	            <dd><button class='disable' id='navQuest'>Quest.</button></dd>
+				<dd><button class='disable' id='navVault'>Vault.</button></dd>
 	            <dd>
 	                <button id='navClose' class='close'>
 	                    <img src='<?php echo $stylesheet_directory ?>img/icon_circle.svg'>
@@ -123,14 +136,6 @@
 	                </button>
 	            </dd>
 	        </dl>
-	    </section>
-
-	    <section class='navigation-content navLearn'>
-
-	    </section>
-
-	    <section class='navigation-content navFollow'>
-
 	    </section>
 
 	</nav>
