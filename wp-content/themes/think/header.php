@@ -83,6 +83,8 @@
 
 	    <div class='pane'>
 
+			<div class='close-area'></div>
+
 			<section class='navigation-content navThink'>
 
 				<?php

@@ -34,6 +34,10 @@
                 transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);
             }
 
+            .close-area {
+                display: block;
+            }
+
         }
 
     }
@@ -84,6 +88,17 @@
 
         }
 
+        .close-area {
+            background: none;
+            display: none;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(-100%, 0, 0);
+            width: 25vw;
+        }
+
         .post-preview {
             display: block;
             margin: 1rem auto 0 auto;
@@ -99,14 +114,14 @@
             }
 
             h1 {
-                font-size: 2.3rem;
+                font-size: 1.8rem;
                 font-weight: 900;
                 margin: 1rem 0;
                 padding: 0;
                 transition: all .3s ease;
 
                 @media screen and (orientation: landscape) {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
 
             }

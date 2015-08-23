@@ -66,6 +66,14 @@
             }
         });
 
+        $('.close-area').on('click', function(e) {
+            $('.navigation-content').removeClass('active');
+            $('.navigation').removeClass('active');
+            $('.menu button').removeClass('active');
+            $('body').removeClass('stop');
+            e.preventDefault();
+        });
+
         $('.menu button').on('click', function(e) {
             if($(this).hasClass('disable')){
                 e.preventDefault();

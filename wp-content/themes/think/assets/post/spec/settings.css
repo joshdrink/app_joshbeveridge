@@ -20,10 +20,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    margin-top: 0 !important;
-}
-
 body {
     background: rgba(245, 245, 245, 1);
 
