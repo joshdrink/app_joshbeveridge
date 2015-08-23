@@ -109,6 +109,21 @@ article {
                 margin-top: 0;
             }
 
+            img {
+                display: block;
+                height: auto !important;
+                margin: 4rem 0;
+                width: 100% !important;
+
+                @media screen and (orientation: landscape) {
+                    position: relative;
+                    left: -7.5%;
+                    max-width: 115% !important;
+                    width: 115% !important;
+                }
+
+            }
+
         }
 
     }
