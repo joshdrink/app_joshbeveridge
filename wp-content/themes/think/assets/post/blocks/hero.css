@@ -9,7 +9,7 @@
 /* Hero ===================================================================== */
 .hero {
     background: $grey;
-    height: 100vh;
+    height: 88vh;
     max-width: 100%;
     position: relative;
     width: 100vw;
@@ -39,4 +39,44 @@
 
     }
 
+    .recent-post {
+        color: $grey-dark;
+        font-family: $font-roboto;
+        font-size: .8rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        text-decoration: none;
+        transform: translate3d(-50%, 0, 0);
+
+        i {
+            margin: 0 0 0 .5rem;
+        }
+
+        &:hover {
+
+            @media screen and (orientation:landscape) {
+                color: $red;
+            }
+
+            i {
+
+                @media screen and (orientation:landscape) {
+                    animation: bounce 1s linear infinite;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes bounce {
+    0% {transform: translate3d(0, 0, 0);}
+    25% {transform: translate3d(0, -10%, 0);}
+    50% {transform: translate3d(0, 0, 0);}
+    75% {transform: translate3d(0, 10%, 0);}
+    100% {transform: translate3d(0, 0, 0);}
 }

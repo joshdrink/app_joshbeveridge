@@ -26,6 +26,8 @@
             <img src='<?php echo $stylesheet_directory ?>img/logo_jbdesign.png'>
         </a>
 
+        <a href='#recent' class='recent-post'>The Latest Thought<i class='fa fa-chevron-down'></i></a>
+
     </section>
 
     <!-- Article =========================================================== -->
