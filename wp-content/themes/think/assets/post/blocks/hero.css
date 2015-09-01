@@ -56,7 +56,7 @@
         &:hover {
 
             @media screen and (orientation:landscape) {
-                color: $red;
+                color: $green;
             }
 
             i {

@@ -147,7 +147,7 @@
                 @media screen and (orientation: landscape) {
 
                     h1 {
-                        color: $red;
+                        color: $green;
                         transition: all .3s ease;
                     }
 
@@ -208,7 +208,7 @@
                     transition: color .3s ease;
 
                     &:hover button{
-                        color: $red;
+                        color: $green;
                         transition: color .3s ease;
                     }
 
@@ -219,7 +219,7 @@
                     font-weight: 700;
 
                     &.active {
-                        color: $red;
+                        color: $green;
                     }
 
                     &.disable {
