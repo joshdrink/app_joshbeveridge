@@ -42,14 +42,13 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#00a300">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="theme-color" content="#ea0f6b">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Google Fonts ====================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
