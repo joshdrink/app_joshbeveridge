@@ -9,14 +9,40 @@
 /* Hero ===================================================================== */
 .hero {
     background: $grey;
+    background-position: center;
+    background-size: cover;
     height: 88vh;
     max-width: 100%;
-    position: relative;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    transition: transform .3s linear .1s, opacity .3s linear .1s, top 0s linear;
     width: 100vw;
+    z-index: 50;
 
     @media screen and (orientation:landscape) {
         height: 100vh;
         width: 90vw;
+    }
+
+    &.active {
+        opacity: 0;
+        top: -100%;
+        transform: translate3d(0, -3rem, 0);
+        transition: transform .3s linear, opacity .3s linear, top 0s linear .3s;
+    }
+
+    .overlay {
+        background: $white;
+        height: 100%;
+        opacity: .95;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
     }
 
     .logo {
@@ -27,6 +53,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 45%;
+        z-index: 15;
 
         @media screen and (orientation:landscape) {
             top: 50%;
@@ -45,9 +72,10 @@
         font-size: .8rem;
         position: absolute;
         left: 50%;
-        bottom: 0;
+        bottom: 2rem;
         text-decoration: none;
         transform: translate3d(-50%, 0, 0);
+        z-index: 15;
 
         i {
             margin: 0 0 0 .5rem;

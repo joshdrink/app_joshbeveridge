@@ -20,18 +20,19 @@
 ?>
 
     <!-- Splash ============================================================ -->
-    <section class='hero'>
+    <section class='hero' style="background-image: url('<?php echo $stylesheet_directory ?>img/noise.gif')">
+
+        <div class='overlay'></div>
 
         <a href='/' class='logo'>
             <img src='<?php echo $stylesheet_directory ?>img/logo_jbdesign.png'>
         </a>
 
-        <a href='#recent' class='recent-post'>The Latest Thought<i class='fa fa-chevron-down'></i></a>
+        <button id='recent' class='recent-post'>The Latest Thought<i class='fa fa-chevron-down'></i></button>
 
     </section>
 
     <!-- Article =========================================================== -->
-    <a id='recent'></a>
 
     <?php
         while ($landing_query->have_posts()) : $landing_query->the_post();

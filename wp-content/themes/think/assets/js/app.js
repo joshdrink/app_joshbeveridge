@@ -114,6 +114,28 @@
             e.preventDefault();
         });
 
+        // Hero Animation ======================================================
+        $('#recent').on('click', function(e) {
+            $('.hero').addClass('active');
+            $('article').addClass('active');
+        });
+
+        if($('section').hasClass('hero')) {
+            $(window).scroll(function(e) {
+                if($(window).scrollTop() > 50) {
+                    $('.hero').addClass('active');
+                    $('article').addClass('active');
+                }
+                if($(window).scrollTop() == 0) {
+                    $('.hero').removeClass('active');
+                    $('article').removeClass('active');
+                }
+            });
+        }
+        else {
+            $('article').addClass('active');
+        }
+
         // Mobile Sizes ========================================================
         if (window.matchMedia("(orientation: portrait)").matches) {
             var navigationHeight = $('.navigation').outerHeight();

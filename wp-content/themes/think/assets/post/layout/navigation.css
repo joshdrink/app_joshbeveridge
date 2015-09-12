@@ -27,11 +27,13 @@
 
         .pane {
             transform: translate3d(0, -88%, 0);
-            transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);
+            /*transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);*/
+            transition: transform .5s ease;
 
             @media screen and (orientation:landscape) {
                 transform: translate3d(-86.66%, 0, 0);
-                transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);
+                /*transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);*/
+                transition: transform .5s ease;
             }
 
             .close-area {
@@ -51,7 +53,7 @@
         top: 0;
         left: 0;
         transform: translate3d(0, 0, 0);
-        transition: box-shadow .2s ease, transform .5s ease;
+        transition: transform .5s ease;
         width: 100vw;
         z-index: 5;
 

@@ -28,5 +28,8 @@
     "modernizr": "~2.8.3",
     "jquery-ui": "~1.11.4",
     "ionicons": "~2.0.1"
+  },
+  "devDependencies": {
+    "smoothstate": "~0.7.2"
   }
 }

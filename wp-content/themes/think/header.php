@@ -77,7 +77,7 @@
 
 	<?php $stylesheet_directory = get_bloginfo('stylesheet_directory') . '/assets/'; ?>
 
-	<!-- Navigation ============================================================ -->
+	<!-- Navigation ==================================================== -->
 	<nav class='navigation'>
 
 	    <div class='pane'>

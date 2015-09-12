@@ -16,6 +16,7 @@
 		wp_enqueue_script('jquery-js', $javascript_directory . 'bower_components/jQuery/dist/jquery.min.js', array());
 		wp_enqueue_script('buggyfill-js', $javascript_directory . 'bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js', array());
 		wp_enqueue_script('match-media-js', $javascript_directory . 'bower_components/matchMedia/matchMedia.js', array());
+		wp_enqueue_script('smoothstate-js', $javascript_directory . 'bower_components/smoothstate/jquery.smoothState.min.js', array());
 		wp_enqueue_script('app-js', $javascript_directory . 'js/app.js', array());
 	}
 
