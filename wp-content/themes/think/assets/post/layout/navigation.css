@@ -46,6 +46,7 @@
 
     .pane {
         background: $white;
+        /*border-top: .1rem solid $black;*/
         box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
         height: 100vh;
         max-width: 100%;
@@ -58,6 +59,8 @@
         z-index: 5;
 
         @media screen and (orientation:landscape) {
+            /*border-top: none;*/
+            /*border-left: .1rem solid $black;*/
             max-width: none;
             width: 75vw;
         }

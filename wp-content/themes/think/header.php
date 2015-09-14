@@ -51,7 +51,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Google Fonts ====================================================== -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 
 	<!-- Typekit =========================================================== -->
 	<script src="//use.typekit.net/osi6lyk.js"></script>
@@ -108,10 +108,6 @@
 
 		    </section>
 
-			<section class='navigation-content navLearn'>
-
-		    </section>
-
 		    <section class='navigation-content navQuest'>
 
 		    </section>
@@ -123,7 +119,6 @@
 	            <dt></dt>
 	            <dd><button id='navThink'>Think.</button></dd>
 				<dd><button class='disable' id='navBuild'>Build.</button></dd>
-	            <dd><button class='disable' id='navLearn'>Learn.</button></dd>
 	            <dd><button class='disable' id='navQuest'>Quest.</button></dd>
 	            <dd>
 	                <button id='navClose' class='close'>
