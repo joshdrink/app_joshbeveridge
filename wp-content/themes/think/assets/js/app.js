@@ -148,14 +148,14 @@
 
         // Why Handler =========================================================
         $('#why').on('click', function(e) {
-            $('.hero .wrapper').addClass('hidden');
+            $('.hero >.wrapper').addClass('hidden');
             $('#recent').addClass('hidden');
             $('body').addClass('stop');
             $('.why').addClass('active');
         });
 
-        $('#whyClose01, #whyClose02').on('click', function(e) {
-            $('.hero .wrapper').removeClass('hidden');
+        $('#whyClose').on('click', function(e) {
+            $('.hero >.wrapper').removeClass('hidden');
             $('#recent').removeClass('hidden');
             $('body').removeClass('stop');
             $('.why').removeClass('active');
@@ -164,17 +164,7 @@
         // Why Content Handler =================================================
         if (window.matchMedia("(orientation: landscape)").matches) {
 
-            var maxWhyHeight = 0;
-
-            $('.why-content p').each(function() {
-                if($(this).outerHeight() > maxWhyHeight) {
-                    maxWhyHeight = $(this).outerHeight();
-                }
-                console.log(maxWhyHeight);
-                $('.why-content').css('height', maxWhyHeight + 'px');
-            });
-
-            $(".why-menu button:not('#whyClose01')").on('click', function(e) {
+            $(".why-menu button:not('#whyClose')").on('click', function(e) {
                 $('.why-menu dd').removeClass('active');
                 $('.why-content p').removeClass('active');
                 var buttonID = $(this).attr('id');
@@ -195,6 +185,24 @@
             $('.pane').css('height', paneHeight + 'px');
             $('.hero').css('height', heroHeight + 'px');
             $('.why').css('height', whyHeight + 'px');
+        }
+
+    });
+
+    $(window).load(function(){
+
+        if (window.matchMedia("(orientation: landscape)").matches) {
+
+            var maxWhyHeight = 0;
+
+            $('.why-content p').each(function() {
+                if($(this).outerHeight(true) > maxWhyHeight) {
+                    maxWhyHeight = $(this).outerHeight(true);
+                }
+                console.log(maxWhyHeight);
+                $('.why-content').css('height', maxWhyHeight + 'px');
+            });
+
         }
 
     });

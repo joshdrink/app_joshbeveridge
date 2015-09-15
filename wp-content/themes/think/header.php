@@ -117,9 +117,9 @@
 	    <section class='menu'>
 	        <dl>
 	            <dt></dt>
-	            <dd><button id='navThink'>Think.</button></dd>
-				<dd><button class='disable' id='navBuild'>Build.</button></dd>
-	            <dd><button class='disable' id='navQuest'>Quest.</button></dd>
+	            <dd><button id='navThink'>Think</button></dd>
+				<dd><button class='disable' id='navBuild'>Build</button></dd>
+	            <dd><button class='disable' id='navQuest'>Quest</button></dd>
 	            <dd>
 	                <button id='navClose' class='close'>
 	                    <img src='<?php echo $stylesheet_directory ?>img/icon_circle.svg'>

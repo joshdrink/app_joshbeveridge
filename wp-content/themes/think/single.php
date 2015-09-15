@@ -33,7 +33,7 @@
                     <dd><a href='https://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title()|urlencode ?>&amp;url=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-linkedin'></i>Spread the Word</a></dd>
                     <dd><a href='http://www.facebook.com/sharer.php?u=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-facebook'></i>Earn Some Likes</a></dd>
                 </dl>
-                <h3 class='tol'>Think Out Loud.</h3>
+                <h3 class='tol'>Think out loud.</h3>
             </div>
         </section>
     </article>
