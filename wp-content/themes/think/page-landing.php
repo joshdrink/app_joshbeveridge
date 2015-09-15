@@ -31,7 +31,7 @@
 
         <div class='why'>
 
-            <dl class='why-menu landscape'>
+            <dl class='why-menu'>
                 <dt></dt>
                 <dd class='return'><button id='whyClose'><i class='fa fa-chevron-left'></i>Return</button></dd>
                 <dd class='active'><button id='past'>Past</button></dd>
@@ -42,11 +42,8 @@
             <div class='why-content'>
                 <!-- <h2 class='portrait'>Design</h2> -->
                 <!-- <p class='design'>Things</p> -->
-                <h2 class='portrait'>Past</h2>
                 <p class='past active'>When I was young, I wanted nothing more than to be a superhero. My role models were as powerful as gods and dedicated each and every moment of their fictional existence to the idealistic pursuit of the greater good. I understood that this was a lofty goal, but not once did I believe that joining the likes of Superman was impossible. As I grew, I came to the exasperating conclusion that superpowers might possibly be beyond my reach. At first this was defeating, but with time I discovered that, while I might not be able to lift a car, I sure could solve people’s problems.</p>
-                <h2 class='portrait'>Present</h2>
                 <p class='present'>Today, I learn something new. With every question I ask and every solution I design, I dive deeper into a world that thrives on the organization of chaos. This chaos invigorates me; it challenges me in every facet of my day-to-day life. A problem is the unique essence that allows me to sharpen my skills and navigate the cyclical nature of iteration. Today, I take advantage of every opportunity to ask <strong>why</strong>. One word has never been so powerful.</p>
-                <h2 class='portrait'>Future</h2>
                 <p class='future'>What the future holds is exciting and unclear. I’ve discovered that design is equivalent to having my own superpower. Inquisition and curiosity will fuel my ambition. With every day that passes I will learn how to refine my way of thinking and adapt to the people around me. The more people I meet, the more perspective I’ll experience. My ability to empathize with those people will be what propels me forward in my career, because only once you can see the world through their eyes can you forge solutions that will change their lives forever.</p>
             </div>
 

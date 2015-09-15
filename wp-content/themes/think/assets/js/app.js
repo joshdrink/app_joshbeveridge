@@ -162,18 +162,14 @@
         });
 
         // Why Content Handler =================================================
-        if (window.matchMedia("(orientation: landscape)").matches) {
-
-            $(".why-menu button:not('#whyClose')").on('click', function(e) {
-                $('.why-menu dd').removeClass('active');
-                $('.why-content p').removeClass('active');
-                var buttonID = $(this).attr('id');
-                var buttonClass = '.' + buttonID;
-                $(buttonClass).addClass('active');
-                $(this).parent().addClass('active');
-            });
-
-        }
+        $(".why-menu button:not('#whyClose')").on('click', function(e) {
+            $('.why-menu dd').removeClass('active');
+            $('.why-content p').removeClass('active');
+            var buttonID = $(this).attr('id');
+            var buttonClass = '.' + buttonID;
+            $(buttonClass).addClass('active');
+            $(this).parent().addClass('active');
+        });
 
         // Mobile Sizes ========================================================
         if (window.matchMedia("(orientation: portrait)").matches) {

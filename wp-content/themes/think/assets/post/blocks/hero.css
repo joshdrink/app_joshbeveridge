@@ -185,6 +185,7 @@
     }
 
     .why-menu {
+        text-align: center;
 
         @media screen and (orientation: landscape) {
             display: inline-block !important;
@@ -194,6 +195,13 @@
         }
 
         dd {
+            display: inline-block;
+            margin: 0 .5rem;
+
+            @media screen and (orientation: landscape) {
+                display: block;
+                margin: 0;
+            }
 
             &.active {
 
@@ -206,9 +214,13 @@
 
             button {
                 font-weight: 900;
-                margin: 0 0 .75rem 0;
+                margin: 0;
                 text-decoration: underline;
                 transition: color .3s linear;
+
+                @media screen and (orientation: landscape) {
+                    margin: 0 0 .75rem 0;
+                }
 
                 &:hover {
 
@@ -223,8 +235,20 @@
         }
 
         .return {
+            display: block;
+            margin: 0;
+            text-align: left;
+
+            @media screen and (orientation: landscape) {
+                text-align: right;
+            }
 
             button {
+                margin: 0 0 1rem 0;
+
+                @media screen and (orientation: landscape) {
+                    margin: 0 0 .75rem 0;
+                }
 
                 i {
                     font-size: .8rem;
@@ -247,22 +271,18 @@
         }
 
         p {
+            opacity: 0;
+            position: absolute;
+            transition: opacity .3s linear;
 
             @media screen and (orientation: landscape) {
                 margin: 0;
-                opacity: 0;
                 padding: 0 0 0 1.5rem;
-                position: absolute;
-                transition: opacity .3s linear;
             }
 
             &.active {
-
-                @media screen and (orientation: landscape) {
-                    opacity: 1;
-                    transition: opacity .3s linear;
-                }
-
+                opacity: 1;
+                transition: opacity .3s linear;
             }
 
         }
