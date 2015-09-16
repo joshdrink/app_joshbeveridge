@@ -99,11 +99,12 @@ a:link {
 .button:visited,
 input[type='submit'] {
     background: $black;
-    border-radius: 5rem;
     color: $white;
     display: inline-block;
-    font-size: 1.5rem;
-    padding: 1.1rem 3rem 1.5rem 3rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 button {
