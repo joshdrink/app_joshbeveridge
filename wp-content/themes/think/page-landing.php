@@ -20,7 +20,7 @@
 ?>
 
     <!-- Splash ============================================================ -->
-    <section class='hero' style="background-image: url('<?php echo $stylesheet_directory ?>img/noise.gif')">
+    <section class='hero'>
 
         <div class='overlay'></div>
 
