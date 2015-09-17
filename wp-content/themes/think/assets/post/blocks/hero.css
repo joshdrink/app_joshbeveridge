@@ -173,7 +173,7 @@
     z-index: 0;
 
     @media screen and (orientation: landscape) {
-        height: 20rem;
+        height: 24rem;
         margin: auto;
         overflow: visible;
         position: absolute;
@@ -181,7 +181,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        width: 60%;
+        width: 65%;
     }
 
     &.active {
@@ -197,7 +197,7 @@
             display: inline-block !important;
             text-align: right;
             vertical-align: top;
-            width: 15%;
+            width: 20%;
         }
 
         dd {
@@ -273,7 +273,7 @@
         @media screen and (orientation: landscape) {
             display: inline-block;
             vertical-align: top;
-            width: 80%;
+            width: 75%;
         }
 
         p {

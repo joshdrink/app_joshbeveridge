@@ -34,17 +34,18 @@
             <dl class='why-menu'>
                 <dt></dt>
                 <dd class='return'><button id='whyClose'><i class='fa fa-chevron-left'></i>Return</button></dd>
-                <dd class='active'><button id='past'>Past</button></dd>
-                <dd><button id='present'>Present</button></dd>
-                <dd><button id='future'>Future</button></dd>
+                <dd class='active'><button id='who'>Who I Am</button></dd>
+                <dd><button id='what'>What I Do</button></dd>
+                <dd><button id='matters'>Why It Matters</button></dd>
             </dl>
 
             <div class='why-content'>
                 <!-- <h2 class='portrait'>Design</h2> -->
                 <!-- <p class='design'>Things</p> -->
-                <p class='past active'>When I was young, I wanted nothing more than to be a superhero. My role models were as powerful as gods and dedicated each and every moment of their fictional existence to the idealistic pursuit of the greater good. I understood that this was a lofty goal, but not once did I believe that joining the likes of Superman was impossible. As I grew, I came to the exasperating conclusion that superpowers might possibly be beyond my reach. At first this was defeating, but with time I discovered that, while I might not be able to lift a car, I sure could solve people’s problems.</p>
-                <p class='present'>Today, I learn something new. With every question I ask and every solution I design, I dive deeper into a world that thrives on the organization of chaos. This chaos invigorates me; it challenges me in every facet of my day-to-day life. A problem is the unique essence that allows me to sharpen my skills and navigate the cyclical nature of iteration. Today, I take advantage of every opportunity to ask <strong>why</strong>. One word has never been so powerful.</p>
-                <p class='future'>What the future holds is exciting and unclear. I’ve discovered that design is equivalent to having my own superpower. Inquisition and curiosity will fuel my ambition. With every day that passes I will learn how to refine my way of thinking and adapt to the people around me. The more people I meet, the more perspective I’ll experience. My ability to empathize with those people will be what propels me forward in my career, because only once you can see the world through their eyes can you forge solutions that will change their lives forever.</p>
+                <p class='who active'>Growing up, I idolized some of the most powerful and intelligent people to never-exist: Superman, Batman, Wonder Woman. Having the ability to drastically alter someone's life for the better was a concept that I was enthralled with. It was hardly about Superman's strength – there was this feeling deep in my gut that overwhelmed me when I read about him breaking into a burning building to save not only the young child trapped inside, but the family dog too. I was envious that their fictional powers allowed them to shape people's lives in such a positive way for quite a long time. It was only recently that I discovered that superhuman or not, I had my own set of unique skills. Empathizing, asking, listening, solving. These attributes all combine to allow me to do something extraordinary: design. </p>
+                <p class='what'>
+                    <em>“Design is the intentional conception and/or iteration of an idea that prioritizes user needs in order to facilitate meeting a defined goal.”</em><br><br>I design because it allows me to have positive impact. A combination of empathy, research, prototyping, and solution, design creates the opportunity for meeting new people, stepping into their shoes and learning new perspectives. I am a sponge for new experience and this field is the ideal way for me to facilitate this passion. Through design, I will be able to create and adapt solutions to help the greater good. I might not be able to break into a burning building, but I sure might be able to think up a better fire extinguisher to prevent it in the first place.</p>
+                <p class='matters'>Anyone can design, and it's not design that sets me apart. There's something to be said about the individuality of who I am, but the real reason my way of thinking is a superpower is that I genuinely care about people. I'm not afraid to step into an environment and experience the problem first hand. I talk with the people around me and learn about their struggles so that I can iterate upon my ideas. I treat every thought organically, and this allows my design process to grow and change to fit the needs of the problem at hand. Empathy is my biggest asset. People always come first, because without them, all the super-strength in the world would be useless. If you have a similar mindset, I want to <a href='mailto:me@joshbeveridge.com'>hear from you</a>.</p>
             </div>
 
         </div>
