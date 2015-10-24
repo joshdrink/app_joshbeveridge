@@ -17,23 +17,19 @@
 
 	<!-- Article =========================================================== -->
     <article>
-        <div class='article-photo' style="background-image: url('<?php echo $thumb_url[0] ?>')">
-            <div class='container'>
-                <h6>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
-                <h1><?php the_title() ?></h1>
-            </div>
-        </div>
         <section class='content'>
             <div class='container'>
+				<h6 class='date'>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
+                <h1 class='title'><?php the_title() ?></h1>
                 <?php the_content() ?>
                 <hr>
                 <dl class='social'>
                     <dt></dt>
-                    <dd><a href="https://twitter.com/intent/tweet?text=<?php the_title()|urlencode ?>&amp;via=joshdrink&amp;url=<?php the_permalink()|urlencode ?>"  data-counturl='<?php the_permalink() ?>' target='_blank'><i class='fa fa-twitter'></i>#TweetItUp</a></dd>
-                    <dd><a href='https://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title()|urlencode ?>&amp;url=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-linkedin'></i>Spread the Word</a></dd>
-                    <dd><a href='http://www.facebook.com/sharer.php?u=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-facebook'></i>Earn Some Likes</a></dd>
+                    <dd><a href="https://twitter.com/intent/tweet?text=<?php the_title()|urlencode ?>&amp;via=joshdrink&amp;url=<?php the_permalink()|urlencode ?>"  data-counturl='<?php the_permalink() ?>' target='_blank'><i class='fa fa-twitter'></i>#HashtagIt</a></dd>
+                    <dd><a href='https://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title()|urlencode ?>&amp;url=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-linkedin'></i>Share This</a></dd>
+                    <dd><a href='http://www.facebook.com/sharer.php?u=<?php the_permalink()|urlencode ?>' target='_blank'><i class='fa fa-facebook'></i>Earn Those Likes</a></dd>
                 </dl>
-                <h3 class='tol'>Think out loud.</h3>
+                <h3 class='tol'>Do great things.</h3>
             </div>
         </section>
     </article>

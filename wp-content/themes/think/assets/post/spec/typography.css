@@ -23,7 +23,7 @@ $font-freight: 'freight-text-pro', serif;
 }
 
 /* Headings ================================================================= */
-h1 {font-size: 2rem;}
+h1 {font-size: 2.5rem;}
 h2 {font-size: 1.8rem;}
 h3 {font-size: 1.6rem;}
 h4 {font-size: 1.4rem;}
@@ -35,12 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-roboto;
     font-weight: 700;
     line-height: 1.2;
-    margin: 3rem 0 1.2rem 0;
-
-    &:first-child {
-        margin: 0 0 .5rem 0;
-    }
-
+    margin: 3rem 0 1.5rem 0;
 }
 
 /* Copy ===================================================================== */
@@ -53,22 +48,19 @@ em,
 span,
 blockquote,
 article {
-    font-family: $font-freight;
-    margin: 1rem 0 2rem 0;
-}
-
-p {
     color: rgba(0, 0, 0, .75);
+    font-family: $font-freight;
+    margin: 1rem 0;
 }
 
 hr {
     border: none;
-    border-top: .1rem solid $green;
+    border-top: 1px solid $green;
     margin: 2rem 0;
 }
 
 blockquote {
-    border-left: .1rem solid $green;
+    border-left: 1px solid $green;
     margin: 2rem 2rem 2rem 0;
     padding: 0 0 0 2rem;
 }
@@ -91,6 +83,22 @@ a:link {
 
 }
 
+/* Anchor Hover State */
+html:not(.touch) {
+
+    a,
+    a:visited,
+    a:link {
+
+        &:hover {
+            color: $grey-dark;
+            transition: color .3s ease;
+        }
+
+    }
+
+}
+
 /* Buttons ================================================================== */
 .button,
 .button:focus,
@@ -98,13 +106,30 @@ a:link {
 .button:link,
 .button:visited,
 input[type='submit'] {
-    background: $black;
+    background: none;
+    border: 1px solid $white;
     color: $white;
     display: inline-block;
     font-size: 1rem;
     padding: 1rem 3rem;
     text-transform: uppercase;
+    transition: background .3s linear;
     width: 100%;
+
+    &:hover {
+        background: $green;
+        transition: background .3s linear;
+    }
+
+}
+
+html.touch {
+
+    .button:hover,
+    input[type='submit']:hover {
+        background: none;
+    }
+
 }
 
 button {
@@ -153,8 +178,15 @@ dl {
 /* Tables =================================================================== */
 
 /* Forms ==================================================================== */
-input {
+label {
+    color: $white;
+    font-family: $font-roboto;
+    font-size: .7rem;
+    font-weight: 300;
+}
 
+input {
+    /*border-bottom: 1px solid $green;*/
 }
 
 textarea {

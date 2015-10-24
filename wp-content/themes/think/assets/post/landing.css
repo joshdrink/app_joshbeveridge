@@ -27,14 +27,5 @@
 @import 'blocks/article.css';
 
 article {
-
-    .article-photo {
-        padding: 8rem 0 0 0;
-
-        @media screen and (orientation: landscape) {
-            padding: 10rem 0 0 0;
-        }
-
-    }
-
+    /*border-top: 1px solid $black;*/
 }

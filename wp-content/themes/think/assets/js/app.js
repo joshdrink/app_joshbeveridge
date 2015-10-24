@@ -71,10 +71,13 @@
             $('.navigation').removeClass('active');
             $('.menu button').removeClass('active');
             if($('.why').hasClass('active')) {
-                // Nothing
+                $('.hero').removeClass('active');
+                $('article').removeClass('active');
             }
             else {
                 $('body').removeClass('stop');
+                $('.hero').removeClass('active');
+                $('article').removeClass('active');
             }
             e.preventDefault();
         });
@@ -90,10 +93,13 @@
                     $('.menu button').removeClass('active');
                     $(this).removeClass('active');
                     if($('.why').hasClass('active')) {
-                        // Nothing
+                        $('.hero').removeClass('active');
+                        $('article').removeClass('active');
                     }
                     else {
                         $('body').removeClass('stop');
+                        $('.hero').removeClass('active');
+                        $('article').removeClass('active');
                     }
                     e.preventDefault();
                 }
@@ -116,6 +122,10 @@
                         $(this).addClass('active');
                         $(buttonClass).addClass('active');
                         $('body').addClass('stop');
+                        $('.hero').addClass('active');
+                        $('article').addClass('active');
+                        // $('.hero').removeClass('active');
+                        // $('article').removeClass('active');
                         e.preventDefault();
                     }
                 }
@@ -125,26 +135,26 @@
         });
 
         // Hero Animation ======================================================
-        $('#recent').on('click', function(e) {
-            $('.hero').addClass('active');
-            $('article').addClass('active');
-        });
-
-        if($('section').hasClass('hero')) {
-            $(window).scroll(function(e) {
-                if($(window).scrollTop() > 0) {
-                    $('.hero').addClass('active');
-                    $('article').addClass('active');
-                }
-                if($(window).scrollTop() == 0) {
-                    $('.hero').removeClass('active');
-                    $('article').removeClass('active');
-                }
-            });
-        }
-        else {
-            $('article').addClass('active');
-        }
+        // $('#recent').on('click', function(e) {
+        //     $('.hero').addClass('active');
+        //     $('article').addClass('active');
+        // });
+        //
+        // if($('section').hasClass('hero')) {
+        //     $(window).scroll(function(e) {
+        //         if($(window).scrollTop() > 0) {
+        //             $('.hero').addClass('active');
+        //             $('article').addClass('active');
+        //         }
+        //         if($(window).scrollTop() == 0) {
+        //             $('.hero').removeClass('active');
+        //             $('article').removeClass('active');
+        //         }
+        //     });
+        // }
+        // else {
+        //     $('article').addClass('active');
+        // }
 
         // Why Handler =========================================================
         $('#why').on('click', function(e) {
@@ -157,7 +167,7 @@
         $('#whyClose').on('click', function(e) {
             $('.hero >.wrapper').removeClass('hidden');
             $('#recent').removeClass('hidden');
-            $('body').removeClass('stop');
+            $('body').removeClass('stop').removeClass('move');
             $('.why').removeClass('active');
         });
 

@@ -17,9 +17,14 @@
     z-index: 500;
 
     @media screen and (orientation:landscape) {
+        display: none;
         height: 100vh;
         top: 0;
         bottom: auto;
+        width: 15vw;
+    }
+
+    @media screen and (orientation:landscape) and (min-width: 768px) {
         width: 10vw;
     }
 
@@ -27,13 +32,15 @@
 
         .pane {
             transform: translate3d(0, -88%, 0);
-            /*transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);*/
-            transition: transform .5s ease;
+            transition: transform .3s ease;
 
             @media screen and (orientation:landscape) {
-                transform: translate3d(-86.66%, 0, 0);
-                /*transition: transform .8s cubic-bezier(0.71, -0.34, 0, 1.53);*/
-                transition: transform .5s ease;
+                transform: translate3d(-85%, 0, 0);
+                transition: transform .3s ease;
+            }
+
+            @media screen and (orientation:landscape) and (min-width: 768px) {
+                transform: translate3d(-90%, 0, 0);
             }
 
             .close-area {
@@ -46,51 +53,23 @@
 
     .pane {
         background: $white;
-        /*border-top: .1rem solid $black;*/
-        box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+        border-top: 1px solid $black;
+        /*box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);*/
         height: 100vh;
         max-width: 100%;
         position: absolute;
         top: 0;
         left: 0;
         transform: translate3d(0, 0, 0);
-        transition: transform .5s ease;
+        transition: transform .3s ease;
         width: 100vw;
         z-index: 5;
 
         @media screen and (orientation:landscape) {
-            /*border-top: none;*/
-            /*border-left: .1rem solid $black;*/
+            border-top: none;
+            border-left: 1px solid $black;
             max-width: none;
-            width: 75vw;
-        }
-
-        &:after {
-            background: $white;
-            content: '';
-            display: block;
-            height: 10%;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            transform: translate3d(0, 90%, 0);
-            width: 100%;
-            z-index: 10;
-
-            @media screen and (orientation:landscape) {
-                background: $white;
-                content: '';
-                display: block;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: auto;
-                transform: translate3d(90%, 0, 0);
-                width: 10%;
-                z-index: 10;
-            }
-
+            width: 100vw;
         }
 
         .close-area {
@@ -106,35 +85,24 @@
 
         .post-preview {
             display: block;
-            margin: 1rem auto 0 auto;
-            padding: 1rem 1rem 0 1rem;
             text-decoration: none;
             transition: all .3s ease;
-            width: 90%;
 
-            @media screen and (orientation: landscape) {
-                margin: 0;
-                padding: 2rem 5rem .5rem 5rem;
-                width: 85%;
-            }
-
-            h1 {
+            h2 {
+                color: $black;
                 font-size: 1.8rem;
                 font-weight: 900;
                 margin: 1rem 0;
-                padding: 0;
+                text-align: left;
                 transition: all .3s ease;
-
-                @media screen and (orientation: landscape) {
-                    font-size: 2.5rem;
-                }
-
             }
 
             h6 {
                 color: $grey-dark;
-                font-size: .8rem;
-                margin: 0;
+                font-size: .7rem;
+                font-weight: 300;
+                margin: 2rem 0 1.5rem 0;
+                text-align: left;
                 transition: all .3s ease;
             }
 
@@ -143,6 +111,7 @@
             }
 
             p {
+                color: $black;
                 margin: 0;
                 transition: all .3s ease;
             }
@@ -161,11 +130,7 @@
             }
 
             &:last-child {
-                padding: 1rem;
-
-                @media screen and (orientation: landscape) {
-                    padding: 2rem 5rem 5rem 5rem;
-                }
+                padding: 0 0 2rem 0;
 
                 hr {
                     display: none;
@@ -176,14 +141,15 @@
         }
 
         .social-links {
-            margin: 1rem auto 0 auto;
-            padding: 1rem 1rem 0 1rem;
-            width: 90%;
+            padding: 0;
 
-            @media screen and (orientation: landscape) {
-                margin: 0;
-                padding: 2rem 5rem 0 5rem;
-                width: 85%;
+            h1 {
+                color: $black;
+                text-align: center;
+            }
+
+            p {
+                color: $black;
             }
 
             hr {
@@ -193,18 +159,15 @@
         }
 
         .mailchimp {
-            margin: 1rem auto 0 auto;
-            padding: 1rem;
-            width: 90%;
-
-            @media screen and (orientation: landscape) {
-                margin: 0;
-                padding: 2rem 5rem 5rem 5rem;
-                width: 85%;
-            }
+            padding: 0 0 2rem 0;
 
             h2 {
-                margin: 0 0 1.5rem 0;
+                color: $black;
+                text-align: left;
+            }
+
+            p {
+                color: $black;
             }
 
             div {
@@ -212,15 +175,13 @@
             }
 
             span {
-                font-family: $font-roboto;
-            }
-
-            label {
+                color: $black;
                 font-family: $font-roboto;
             }
 
             input:not([type='submit']) {
-                border: .1rem solid $black;
+                border: .1rem solid $grey-dark;
+                color: $grey-dark;
                 display: block;
                 margin: 0 0 1rem 0;
                 padding: .5rem;
@@ -229,7 +190,7 @@
 
             input[type='submit'] {
 
-                @media screen and (orientation: landscape) {
+                @media screen and (min-width: 768px), {
                     margin: 0;
                 }
 
@@ -237,14 +198,14 @@
 
             .half {
 
-                @media screen and (orientation: landscape) {
+                @media screen and (min-width: 768px), {
                     display: inline-block;
                     width: 48%;
                 }
 
                 &.right {
 
-                    @media screen and (orientation: landscape) {
+                    @media screen and (min-width: 768px), {
                         float: right;
                     }
 
@@ -267,29 +228,38 @@
         z-index: 10;
 
         dl {
-            position: absolute;
+            background: none;
+            line-height: 0;
+            position: relative;
             top: 50%;
-            left: 0;
             transform: translate3d(0, -50%, 0);
-            width: 100%;
 
             @media screen and (orientation:landscape) {
                 height: 100%;
+                max-width: none;
+                position: absolute;
                 top: 0;
                 left: 50%;
                 transform: translate3d(-50%, 0, 0);
+                width: 100%;
             }
 
             dd {
                 display: inline-block;
-                line-height: 1;
-                margin: 0 .5rem;
+                line-height: 0;
+                margin: 0 .8rem;
+                width: 15%;
+
+                @media screen and (orientation: portrait) and (min-width: 768px) {
+                    width: 10%;
+                }
 
                 @media screen and (orientation:landscape) {
                     display: block;
-                    margin: 1.5rem 0;
+                    margin: 2rem 0;
                     text-align: center;
                     transition: color .3s ease;
+                    width: 100%;
 
                     &:hover button{
                         color: $green;
@@ -299,8 +269,8 @@
                 }
 
                 button {
-                    font-family: $font-roboto;
-                    font-weight: 700;
+                    line-height: 0;
+                    width: 100%;
 
                     &.active {
                         color: $green;
@@ -310,30 +280,42 @@
                         color: $disabled;
                     }
 
-                }
+                    img {
+                        width: 100%;
 
-                &:first-of-type {
-                    margin: 0 .5rem 0 1.5rem;
+                        @media screen and (orientation: landscape) {
+                            width: 50%;
+                        }
 
-                    @media screen and (orientation:landscape) {
-                        margin: 2rem 0 1.5rem 0;
                     }
 
                 }
 
+                &:first-of-type {
+                    margin: 0 .8rem 0 0;
+
+                    @media screen and (orientation:landscape) {
+                        margin: 2rem 0;
+                    }
+
+                    /*@media screen and (orientation:landscape) and (min-width: 768px) {
+                        margin: 2rem 0 2.5rem 0;
+                    }*/
+
+                }
+
                 &:last-of-type {
-                    perspective: 1000;
-                    position: absolute;
-                    top: 50%;
-                    right: 1rem;
-                    transform: translate3d(0, -50%, 0);
+                    float: right;
+                    margin: 0;
+                    perspective: 1000rem;
+                    position: relative;
 
                     @media screen and (orientation: landscape) {
-                        margin: 0;
+                        position: absolute;
                         top: auto;
                         left: 50%;
                         right: auto;
-                        bottom: 2rem;
+                        bottom: 1rem;
                         transform: translate3d(-50%, 0, 0);
 
                         &:hover {
@@ -341,6 +323,33 @@
                             >button >img {
                                 transform: rotateY(180deg);
                                 transition: all .3s ease;
+                            }
+
+                        }
+
+                    }
+
+                    @media screen and (orientation:landscape) and (min-width: 768px) {
+                        bottom: 1.5rem;
+                    }
+
+                    >button {
+
+                        >img,
+                        .flipper {
+
+                            @media screen and (orientation:landscape) {
+                                margin: 0 auto;
+                            }
+
+                        }
+
+                        .flipper {
+
+                            @media screen and (orientation:landscape) {
+                                left: 50%;
+                                transform: translate3d(-50%, 0, 0);
+                                width: 50%;
                             }
 
                         }
@@ -364,13 +373,8 @@
                                 left: 0;
                                 transform: rotateY(-180deg);
                                 transition: all .3s ease .2s;
-                                width: 2.2rem;
+                                width: 100%;
                                 z-index: 5;
-
-                                @media screen and (orientation: landscape) {
-                                    width: 3rem;
-                                }
-
                             }
 
                             img:last-child {
@@ -381,12 +385,7 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 2.2rem;
-
-                                @media screen and (orientation: landscape) {
-                                    width: 3rem;
-                                }
-
+                                width: 100%;
                             }
 
                         }
@@ -398,19 +397,21 @@
                         position: relative;
                         transform: rotateY(0deg);
                         transition: all .3s ease;
-                        width: 2.2rem;
+                        width: 100%;
 
                         @media screen and (orientation: landscape) {
-                            width: 3rem;
+                            width: 50%;
                         }
 
                     }
 
                     .flipper {
+                        height: 100%;
                         position: absolute;
                         top: 0;
                         left: 0;
                         transform-style: preserve-3d;
+                        width: 100%;
 
                         img:first-child {
                             backface-visibility: hidden;
@@ -420,13 +421,8 @@
                             left: 0;
                             transform: rotateY(0deg);
                             transition: all .3s ease .2s;
-                            width: 2.2rem;
+                            width: 100%;
                             z-index: 5;
-
-                            @media screen and (orientation: landscape) {
-                                width: 3rem;
-                            }
-
                         }
 
                         img:last-child {
@@ -437,12 +433,7 @@
                             left: 0;
                             transform: rotateY(-180deg);
                             transition: all .3s ease .2s;
-                            width: 2.2rem;
-
-                            @media screen and (orientation: landscape) {
-                                width: 3rem;
-                            }
-
+                            width: 100%;
                         }
 
                     }
@@ -464,13 +455,8 @@
                                 left: 0;
                                 transform: rotateY(180deg);
                                 transition: all .3s ease .2s;
-                                width: 2.2rem;
+                                width: 100%;
                                 z-index: 5;
-
-                                @media screen and (orientation: landscape) {
-                                    width: 3rem;
-                                }
-
                             }
 
                             img:last-child {
@@ -481,12 +467,7 @@
                                 left: 0;
                                 transform: rotateY(0deg);
                                 transition: all .3s ease .2s;
-                                width: 2.2rem;
-
-                                @media screen and (orientation: landscape) {
-                                    width: 3rem;
-                                }
-
+                                width: 100%;
                             }
 
                         }
@@ -515,12 +496,31 @@
 
         @media screen and (orientation:landscape) {
             height: 100%;
+            width: 85%;
+        }
+
+        @media screen and (orientation:landscape) and (min-width: 768px) {
+            width: 90%;
         }
 
         &.active {
             opacity: 1;
             transform: translate3d(0, 0, 0);
-            transition: opacity .3s ease .5s, transform 0s ease;
+            transition: opacity .3s ease .3s, transform 0s ease;
+        }
+
+        .container {
+            background: none;
+
+            >h1 {
+                color: $black;
+                text-align: center;
+            }
+
+            >p {
+                color: $black;
+            }
+
         }
 
     }

@@ -6,13 +6,21 @@
 
 ============================================================================= */
 
-/* Dynamic Copy ============================================================= */
+/* Point Copy System ======================================================== */
+@media screen {
+    html,
+    body {
+        font-size: 12pt;
+    }
+}
+@media screen and (min-width: 768px) {
+    html,
+    body {
+        font-size: 16pt;
+    }
+}
 
-@media screen and (orientation:potrait) {html, body {font-size: 4vw;}}
-@media screen and (orientation:landscape) {html, body {font-size: 1.5vw;}}
-
-/* Sections ================================================================= */
-
+/* Common Styles ============================================================ */
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -21,7 +29,7 @@
 }
 
 body {
-    background: rgba(245, 245, 245, 1);
+    background: rgba(251, 251, 250, 1);
 
     &.stop {
         overflow-y: hidden;
@@ -30,7 +38,7 @@ body {
 }
 
 section {
-    background: rgba(245, 245, 245, 1);
+    background: rgba(251, 251, 250, 1);
     display: block;
     margin: 0;
     max-width: 100%;
@@ -41,17 +49,12 @@ section {
 }
 
 .container {
-    background: rgba(245, 245, 245, 1);
+    background: rgba(251, 251, 250, 1);
     display: block;
     margin: 0 auto;
-    padding: 1.5rem;
-    width: 98%;
-
-    @media screen and (orientation: landscape) {
-        padding: 5rem;
-        width: 65%;
-    }
-
+    max-width: 85%;
+    padding: 0;
+    width: 30rem;
 }
 
 /* Media ==================================================================== */
