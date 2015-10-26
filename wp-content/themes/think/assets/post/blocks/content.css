@@ -1,0 +1,103 @@
+/* =============================================================================
+
+    CONTENT CSS
+    Property of Josh Beveridge
+    Authored by Josh Beveridge
+
+============================================================================= */
+body {
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.content {
+    background: $pink;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, -88.8888889%, 0);
+    transition: background .5s linear, transform .3s ease;
+    width: 100vw;
+    z-index: 50;
+
+    @media screen and (orientation: landscape) {
+        height: 100vh;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        transform: translate3d(100%, 0, 0);
+        width: 90vw;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1025px) {
+        width: 95vw;
+    }
+
+    &.active {
+        background: $white;
+        transform: translate3d(0, 0, 0);
+        transition: background .5s linear, transform .3s ease;
+
+        @media screen and (orientation: landscape) {
+            transform: translate3d(11.111111111%, 0, 0);
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1025px) {
+            transform: translate3d(5.263157894%, 0, 0);
+        }
+
+    }
+
+    .button-content {
+        background: none;
+        height: 11.1111111%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        @media screen and (orientation: landscape) {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: auto;
+            left: 0;
+            width: 10vw;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1025px) {
+            width: 5vw;
+        }
+
+        &.active {
+            display: none;
+        }
+
+        span {
+            color: $white;
+            font-family: $font-roboto;
+            font-size: 1.7rem;
+            font-weight: 100;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            text-transform: uppercase;
+            transform: translate(-50%, -50%);
+
+            @media screen and (orientation: landscape) {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+
+        }
+
+    }
+
+}

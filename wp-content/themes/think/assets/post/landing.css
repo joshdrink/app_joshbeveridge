@@ -1,18 +1,20 @@
 /* =============================================================================
 
-    // LANDING CSS
-    // Property of Josh Beveridge
-    // Authored by Josh Beveridge
+    LANDING CSS
+    Property of Norex
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 
-/* Landing ================================================================== */
+/* Imports ================================================================== */
 
-/* Settings */
-@import 'spec/settings.css';
+/* Hello */
 
 /* Palette */
 @import 'spec/palette.css';
+
+/* Settings */
+@import 'spec/settings.css';
 
 /* Typography */
 @import 'spec/typography.css';
@@ -23,9 +25,5 @@
 /* Hero ===================================================================== */
 @import 'blocks/hero.css';
 
-/* Article ================================================================== */
-@import 'blocks/article.css';
-
-article {
-    /*border-top: 1px solid $black;*/
-}
+/* Content ================================================================== */
+@import 'blocks/content.css';

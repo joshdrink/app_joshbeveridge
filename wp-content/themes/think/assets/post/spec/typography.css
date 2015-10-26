@@ -1,18 +1,19 @@
 /* =============================================================================
 
-    // TYPOGRAPHY CSS
-    // Property of Josh Beveridge
-    // Authored by Josh Beveridge
+    TYPOGRAPHY CSS
+    Property of Norex
+    Authored by Josh Beveridge and Justin Bellefontaine
 
 ============================================================================= */
 
+/* Forms */
+@import 'spec/forms.css';
+
 /* Google Fonts ============================================================= */
 $font-roboto: 'Roboto', sans-serif;
-$font-roboto-cdn: 'Roboto Condensed', sans-serif;
-$font-droid: 'Droid Serif', serif;
-$font-freight: 'freight-text-pro', serif;
 
 /* Typekit Fonts ============================================================ */
+$font-freight: 'freight-text-pro', serif;
 
 /* Custom Fonts ============================================================= */
 
@@ -23,7 +24,7 @@ $font-freight: 'freight-text-pro', serif;
 }
 
 /* Headings ================================================================= */
-h1 {font-size: 2.5rem;}
+h1 {font-size: 2rem;}
 h2 {font-size: 1.8rem;}
 h3 {font-size: 1.6rem;}
 h4 {font-size: 1.4rem;}
@@ -32,10 +33,7 @@ h6 {font-size: 1.2rem;}
 
 h1, h2, h3, h4, h5, h6 {
     color: $black;
-    font-family: $font-roboto;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 3rem 0 1.5rem 0;
+    margin: 2.5rem 0 1rem 0;
 }
 
 /* Copy ===================================================================== */
@@ -48,55 +46,32 @@ em,
 span,
 blockquote,
 article {
-    color: rgba(0, 0, 0, .75);
-    font-family: $font-freight;
+    color: $black;
     margin: 1rem 0;
+}
+
+p {
+
 }
 
 hr {
     border: none;
-    border-top: 1px solid $green;
-    margin: 2rem 0;
+    border-top: 1px solid $black;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 blockquote {
-    border-left: 1px solid $green;
-    margin: 2rem 2rem 2rem 0;
-    padding: 0 0 0 2rem;
+
 }
 
 /* Anchors */
 a,
 a:visited,
 a:link {
-    color: $green;
-    transition: color .3s ease;
-
-    &:hover {
-
-        @media screen and (orientation: landscape) {
-            color: $grey-dark;
-            transition: color .3s ease;
-        }
-
-    }
-
-}
-
-/* Anchor Hover State */
-html:not(.touch) {
-
-    a,
-    a:visited,
-    a:link {
-
-        &:hover {
-            color: $grey-dark;
-            transition: color .3s ease;
-        }
-
-    }
-
+    color: red;
 }
 
 /* Buttons ================================================================== */
@@ -106,39 +81,7 @@ html:not(.touch) {
 .button:link,
 .button:visited,
 input[type='submit'] {
-    background: none;
-    border: 1px solid $white;
-    color: $white;
-    display: inline-block;
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    transition: background .3s linear;
-    width: 100%;
 
-    &:hover {
-        background: $green;
-        transition: background .3s linear;
-    }
-
-}
-
-html.touch {
-
-    .button:hover,
-    input[type='submit']:hover {
-        background: none;
-    }
-
-}
-
-button {
-    background: none;
-    border: none;
-    box-shadow: none;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
 }
 
 /* Inputs =================================================================== */
@@ -157,7 +100,8 @@ input {
 
 /* Lists ==================================================================== */
 ul {
-
+    margin: 1rem 0 1rem 1rem;
+    padding: 0;
 }
 
 dl {
@@ -176,22 +120,6 @@ dl {
 }
 
 /* Tables =================================================================== */
-
-/* Forms ==================================================================== */
-label {
-    color: $white;
-    font-family: $font-roboto;
-    font-size: .7rem;
-    font-weight: 300;
-}
-
-input {
-    /*border-bottom: 1px solid $green;*/
-}
-
-textarea {
-    border: 1px solid $black;
-    margin: 0 0 1rem 0;
-    padding: 1rem;
+table {
     width: 100%;
 }

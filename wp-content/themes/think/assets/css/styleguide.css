@@ -1,0 +1,261 @@
+/* =============================================================================
+
+    STYLE GUIDE CSS (EDITABLE)
+    Property of Norex
+    Authored by Josh Beveridge and Justin Bellefontaine
+
+============================================================================= */
+
+/* Google Fonts ============================================================= */
+/* Import relevant fonts here if you are using Google Fonts */
+/* If you are using Typekit, ignore this section */
+@import url(//fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700);
+
+/* ========================================================================== */
+/* Notes ==================================================================== */
+/* ========================================================================== */
+
+/*
+
+	DO NOT use pixel values for any CSS property. All values should be in rem or
+	em values. You can convert rem or em values using http://pxtoem.com/.
+
+*/
+
+/* ========================================================================== */
+/* Paragraphs =============================================================== */
+/* ========================================================================== */
+
+p {
+	font-size: 1rem;
+	font-weight: normal;
+	color: #666;
+	font-family: 'Alegreya', serif;
+	line-height: 1.5;
+}
+
+/* ========================================================================== */
+/* Headings ================================================================= */
+/* ========================================================================== */
+
+/* Global heading styles */
+/* Only include styles that apply to ALL heading types */
+.module-h1,
+.module-h2,
+.module-h3,
+.module-h4,
+.module-h5,
+.module-h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+}
+
+/* Heading 1 */
+/* H1 tags should be used sparingly and should only be used for page titles.
+   These are crucial for SEO value. */
+.module-h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 6rem;
+}
+
+/* Heading 2 */
+/* H2 tags should be used as a subtitle and are seen as second priority through
+   the eyes of a search engine. */
+.module-h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 5rem;
+}
+
+/* Heading 3 */
+.module-h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 4rem;
+}
+
+/* Heading 4 */
+.module-h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+/* Heading 5 */
+.module-h5 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+/* Heading 6 */
+.module-h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+/* ========================================================================== */
+/* Colors =================================================================== */
+/* ========================================================================== */
+
+/* Define all colors here for quick reference */
+
+/* Color 1: # Hex Code */
+/* Color 2: # Hex Code */
+/* Color 3: # Hex Code */
+/* Color 4: # Hex Code */
+/* Color 5: # Hex Code */
+
+/* Color block 1 */
+.color-block.brand-color-1 {
+	background: #222;
+}
+
+/* Color block 2 */
+.color-block.brand-color-2 {
+	background: #ed1556;
+}
+
+/* Color block 3 */
+.color-block.brand-color-3 {
+	background: #222;
+}
+
+/* Color block 4 */
+.color-block.brand-color-4 {
+	background: #222;
+}
+
+/* Color block 5 */
+.color-block.brand-color-5 {
+	background: #222;
+}
+
+/* ========================================================================== */
+/* Buttons ================================================================== */
+/* ========================================================================== */
+
+/* Base buttons */
+.button {
+	background: #222;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	display: inline-block;
+}
+
+/* Hover effects for buttons */
+.button:hover {
+	background: #ed1556;
+}
+
+/* ========================================================================== */
+/* Lists ==================================================================== */
+/* ========================================================================== */
+
+/* Unordered lists (ul) */
+ul li {
+	font-family: Arial;
+	font-size: 1rem;
+	color: #333;
+	line-height: normal;
+	font-weight: normal;
+}
+
+/* Ordered lists (ol) */
+ol li {
+	font-family: Arial;
+	font-size: 1rem;
+	color: #333;
+	line-height: normal;
+	font-weight: normal;
+}
+
+/* ========================================================================== */
+/* Forms ==================================================================== */
+/* ========================================================================== */
+
+/* Form Labels */
+form label {
+	display: block;
+	margin-bottom: 0.8rem;
+	font-weight: normal;
+	color: #222;
+	font-size: 1rem;
+}
+
+/* Text inputs (email, telephone, name, etc.) */
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="number"],
+textarea {
+	border: 1px solid #ccc;
+	padding: 1rem;
+	width: 100%;
+	color: #666;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+/* How do these look when they're clicked on? */
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+textarea:focus {
+	border-color: #ed1556;
+}
+
+/* ========================================================================== */
+/* Checkboxes and Radio Buttons ============================================= */
+/* ========================================================================== */
+
+/* Single checkbox or radio input labels */
+.checkbox-radio-list label {
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+/* ========================================================================== */
+/* Tables =================================================================== */
+/* ========================================================================== */
+
+/* Alternating row color */
+table tbody tr:nth-child(even) {
+	background: #fafafa;
+}
+
+/* Global padding for table cells */
+table td {
+	padding: 1rem;
+}
+
+/* Table headings */
+table thead td {
+	background: #000;
+	font-size: 0.9rem;
+	text-transform: none; /* uppercase | lowercase | capitalize | none */
+	color: #fff;
+	font-weight: 700;
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Table content cells */
+table tbody td {
+	font-size: 1rem;
+	text-transform: none; /* uppercase | lowercase | capitalize | none */
+	color: #333;
+	font-weight: normal;
+	border: 1px solid #dfdfdf;
+}

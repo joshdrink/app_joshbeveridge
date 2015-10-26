@@ -1,524 +1,81 @@
 /* =============================================================================
 
-    // NAVIGATION CSS
-    // Property of Josh Beveridge
-    // Authored by Josh Beveridge
+    NAVIGATION CSS
+    Property of Josh Beveridge
+    Authored by Josh Beveridge
 
 ============================================================================= */
-
-/* Navigation =============================================================== */
-.navigation {
-    height: 12vh;
-    max-width: 100%;
-    position: fixed;
-    right: 0;
+nav {
+    background: $pink;
+    height: 90vh;
+    overflow: auto;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    transform: translate3d(0, 88.8888889%, 0);
+    transition: background .5s linear, transform .3s ease;
     width: 100vw;
-    z-index: 500;
+    z-index: 50;
 
-    @media screen and (orientation:landscape) {
-        display: none;
+    @media screen and (orientation: landscape) {
         height: 100vh;
         top: 0;
         bottom: auto;
-        width: 15vw;
+        left: 0;
+        transform: translate3d(-88.8888889%, 0, 0);
+        width: 90vw;
     }
 
-    @media screen and (orientation:landscape) and (min-width: 768px) {
-        width: 10vw;
+    @media screen and (orientation: landscape) and (min-width: 1025px) {
+        transform: translate3d(-94.736842105%, 0, 0);
+        width: 95vw;
     }
 
     &.active {
-
-        .pane {
-            transform: translate3d(0, -88%, 0);
-            transition: transform .3s ease;
-
-            @media screen and (orientation:landscape) {
-                transform: translate3d(-85%, 0, 0);
-                transition: transform .3s ease;
-            }
-
-            @media screen and (orientation:landscape) and (min-width: 768px) {
-                transform: translate3d(-90%, 0, 0);
-            }
-
-            .close-area {
-                display: block;
-            }
-
-        }
-
+        background: $white;
+        transform: translate3d(0, 0, 0);
+        transition: background .5s linear, transform .3s ease;
     }
 
-    .pane {
-        background: $white;
-        border-top: 1px solid $black;
-        /*box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);*/
-        height: 100vh;
-        max-width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate3d(0, 0, 0);
-        transition: transform .3s ease;
-        width: 100vw;
-        z-index: 5;
+    .button-menu {
+        background: none;
+        height: 11.1111111%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
 
-        @media screen and (orientation:landscape) {
-            border-top: none;
-            border-left: 1px solid $black;
-            max-width: none;
-            width: 100vw;
-        }
-
-        .close-area {
-            background: none;
-            display: none;
+        @media screen and (orientation: landscape) {
             height: 100%;
             position: absolute;
             top: 0;
-            left: 0;
-            transform: translate3d(-100%, 0, 0);
-            width: 25vw;
+            right: 0;
+            width: 10vw;
         }
 
-        .post-preview {
-            display: block;
-            text-decoration: none;
-            transition: all .3s ease;
-
-            h2 {
-                color: $black;
-                font-size: 1.8rem;
-                font-weight: 900;
-                margin: 1rem 0;
-                text-align: left;
-                transition: all .3s ease;
-            }
-
-            h6 {
-                color: $grey-dark;
-                font-size: .7rem;
-                font-weight: 300;
-                margin: 2rem 0 1.5rem 0;
-                text-align: left;
-                transition: all .3s ease;
-            }
-
-            hr {
-                margin-bottom: 0;
-            }
-
-            p {
-                color: $black;
-                margin: 0;
-                transition: all .3s ease;
-            }
-
-            &:hover {
-
-                @media screen and (orientation: landscape) {
-
-                    h1 {
-                        color: $green;
-                        transition: all .3s ease;
-                    }
-
-                }
-
-            }
-
-            &:last-child {
-                padding: 0 0 2rem 0;
-
-                hr {
-                    display: none;
-                }
-
-            }
-
-        }
-
-        .social-links {
-            padding: 0;
-
-            h1 {
-                color: $black;
-                text-align: center;
-            }
-
-            p {
-                color: $black;
-            }
-
-            hr {
-                margin-bottom: 0;
-            }
-
-        }
-
-        .mailchimp {
-            padding: 0 0 2rem 0;
-
-            h2 {
-                color: $black;
-                text-align: left;
-            }
-
-            p {
-                color: $black;
-            }
-
-            div {
-                font-family: $font-roboto;
-            }
-
-            span {
-                color: $black;
-                font-family: $font-roboto;
-            }
-
-            input:not([type='submit']) {
-                border: .1rem solid $grey-dark;
-                color: $grey-dark;
-                display: block;
-                margin: 0 0 1rem 0;
-                padding: .5rem;
-                width: 100%;
-            }
-
-            input[type='submit'] {
-
-                @media screen and (min-width: 768px), {
-                    margin: 0;
-                }
-
-            }
-
-            .half {
-
-                @media screen and (min-width: 768px), {
-                    display: inline-block;
-                    width: 48%;
-                }
-
-                &.right {
-
-                    @media screen and (min-width: 768px), {
-                        float: right;
-                    }
-
-                }
-
-            }
-
-        }
-
-    }
-
-    .menu {
-        background: none;
-        height: 100%;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-
-        dl {
-            background: none;
-            line-height: 0;
-            position: relative;
-            top: 50%;
-            transform: translate3d(0, -50%, 0);
-
-            @media screen and (orientation:landscape) {
-                height: 100%;
-                max-width: none;
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translate3d(-50%, 0, 0);
-                width: 100%;
-            }
-
-            dd {
-                display: inline-block;
-                line-height: 0;
-                margin: 0 .8rem;
-                width: 15%;
-
-                @media screen and (orientation: portrait) and (min-width: 768px) {
-                    width: 10%;
-                }
-
-                @media screen and (orientation:landscape) {
-                    display: block;
-                    margin: 2rem 0;
-                    text-align: center;
-                    transition: color .3s ease;
-                    width: 100%;
-
-                    &:hover button{
-                        color: $green;
-                        transition: color .3s ease;
-                    }
-
-                }
-
-                button {
-                    line-height: 0;
-                    width: 100%;
-
-                    &.active {
-                        color: $green;
-                    }
-
-                    &.disable {
-                        color: $disabled;
-                    }
-
-                    img {
-                        width: 100%;
-
-                        @media screen and (orientation: landscape) {
-                            width: 50%;
-                        }
-
-                    }
-
-                }
-
-                &:first-of-type {
-                    margin: 0 .8rem 0 0;
-
-                    @media screen and (orientation:landscape) {
-                        margin: 2rem 0;
-                    }
-
-                    /*@media screen and (orientation:landscape) and (min-width: 768px) {
-                        margin: 2rem 0 2.5rem 0;
-                    }*/
-
-                }
-
-                &:last-of-type {
-                    float: right;
-                    margin: 0;
-                    perspective: 1000rem;
-                    position: relative;
-
-                    @media screen and (orientation: landscape) {
-                        position: absolute;
-                        top: auto;
-                        left: 50%;
-                        right: auto;
-                        bottom: 1rem;
-                        transform: translate3d(-50%, 0, 0);
-
-                        &:hover {
-
-                            >button >img {
-                                transform: rotateY(180deg);
-                                transition: all .3s ease;
-                            }
-
-                        }
-
-                    }
-
-                    @media screen and (orientation:landscape) and (min-width: 768px) {
-                        bottom: 1.5rem;
-                    }
-
-                    >button {
-
-                        >img,
-                        .flipper {
-
-                            @media screen and (orientation:landscape) {
-                                margin: 0 auto;
-                            }
-
-                        }
-
-                        .flipper {
-
-                            @media screen and (orientation:landscape) {
-                                left: 50%;
-                                transform: translate3d(-50%, 0, 0);
-                                width: 50%;
-                            }
-
-                        }
-
-                    }
-
-                    >button.active {
-
-                        >img {
-                            transform: rotateY(180deg);
-                            transition: all .3s ease;
-                        }
-
-                        .flipper {
-
-                            img:first-child {
-                                backface-visibility: hidden;
-                                display: block;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                transform: rotateY(-180deg);
-                                transition: all .3s ease .2s;
-                                width: 100%;
-                                z-index: 5;
-                            }
-
-                            img:last-child {
-                                backface-visibility: hidden;
-                                display: block;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                transform: rotateY(0deg);
-                                transition: all .3s ease .2s;
-                                width: 100%;
-                            }
-
-                        }
-
-                    }
-
-                    >button >img {
-                        display: block;
-                        position: relative;
-                        transform: rotateY(0deg);
-                        transition: all .3s ease;
-                        width: 100%;
-
-                        @media screen and (orientation: landscape) {
-                            width: 50%;
-                        }
-
-                    }
-
-                    .flipper {
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        transform-style: preserve-3d;
-                        width: 100%;
-
-                        img:first-child {
-                            backface-visibility: hidden;
-                            display: block;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            transform: rotateY(0deg);
-                            transition: all .3s ease .2s;
-                            width: 100%;
-                            z-index: 5;
-                        }
-
-                        img:last-child {
-                            backface-visibility: hidden;
-                            display: block;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            transform: rotateY(-180deg);
-                            transition: all .3s ease .2s;
-                            width: 100%;
-                        }
-
-                    }
-
-                    &.active {
-
-                        >button >img {
-                            transform: rotateY(180deg);
-                            transition: all .3s ease;
-                        }
-
-                        .flipper {
-
-                            img:first-child {
-                                backface-visibility: hidden;
-                                display: block;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                transform: rotateY(180deg);
-                                transition: all .3s ease .2s;
-                                width: 100%;
-                                z-index: 5;
-                            }
-
-                            img:last-child {
-                                backface-visibility: hidden;
-                                display: block;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                transform: rotateY(0deg);
-                                transition: all .3s ease .2s;
-                                width: 100%;
-                            }
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
-
-    }
-
-    .navigation-content {
-        background: none;
-        height: 88%;
-        opacity: 0;
-        overflow: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate3d(100%, 0, 0);
-        transition: opacity 0s ease, transform 0s ease;
-        width: 100%;
-
-        @media screen and (orientation:landscape) {
-            height: 100%;
-            width: 85%;
-        }
-
-        @media screen and (orientation:landscape) and (min-width: 768px) {
-            width: 90%;
+        @media screen and (orientation: landscape) and (min-width: 1025px) {
+            width: 5vw;
         }
 
         &.active {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-            transition: opacity .3s ease .3s, transform 0s ease;
+            display: none;
         }
 
-        .container {
-            background: none;
+        span {
+            color: $white;
+            font-family: $font-roboto;
+            font-size: 1.7rem;
+            font-weight: 100;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            text-transform: uppercase;
+            transform: translate(-50%, -50%);
 
-            >h1 {
-                color: $black;
-                text-align: center;
-            }
-
-            >p {
-                color: $black;
+            @media screen and (orientation: landscape) {
+                transform: translate(-50%, -50%) rotate(90deg);
             }
 
         }
