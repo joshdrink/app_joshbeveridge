@@ -8,6 +8,13 @@
 .hero {
     padding: 0;
 
+    .wrapper {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 5;
+    }
+
     .icon {
         display: block;
         margin: 0 auto;
@@ -17,6 +24,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 60%;
+
+        @media screen and (orientation: landscape) {
+            width: 30%;
+        }
 
         @media screen and (orientation: landscape) and (min-width: 1024px) {
             top: 50%;
@@ -114,10 +125,14 @@
 
     .roles {
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+
+        @media screen and (orientation: landscape) {
+            top: 80%;
+        }
 
         @media screen and (orientation: landscape) and (min-width: 1024px) {
             top: 50%;

@@ -77,108 +77,11 @@
 
 	<?php $stylesheet_directory = get_bloginfo('stylesheet_directory') . '/assets/'; ?>
 
-	<!-- Navigation ==================================================== -->
-	<nav class='navigation'>
+	<!-- Navigation ======================================================== -->
+	<nav>
 
-	    <div class='pane'>
-
-			<div class='close-area'></div>
-
-			<section class='navigation-content navThink'>
-
-				<div class='container'>
-
-					<h1>The Archive</h1>
-					<p>This is a list, in chronological order, of my writing. I have a rather strong affinity for learning, researching and picking up new context on a whim, and so I choose not to supply an obvious way to navigate this list. The most recent pieces I've written will shed the most light on my current perspective, which I feel is most beneficial.</p>
-
-					<?php
-				        while ($nav_query->have_posts()) : $nav_query->the_post();
-				    ?>
-
-				    <a href='<?php the_permalink() ?>' class='post-preview'>
-						<h6>Published on <?php echo get_the_date('l, F j, Y') ?></h6>
-		                <h2><?php the_title() ?></h2>
-						<?php the_excerpt() ?>
-						<hr>
-					</a>
-
-				    <?php
-				        endwhile;
-				        wp_reset_postdata();
-				    ?>
-
-				</div>
-
-		    </section>
-
-			<section class='navigation-content navBuild'>
-
-		    </section>
-
-		    <section class='navigation-content navEnlist'>
-
-				<div class='container'>
-
-					<div class='social-links'>
-
-						<h1>Get in Touch</h1>
-						<p>Curious about something you read here? Think you might want to discuss something further? If you're so inclined, you can explore my code on <a href='https://github.com/joshdrink' target='_blank'>Github</a>. A surefire way to start up a conversation is to contact me through <a href='http://twitter.com/joshdrink' target='_blank'>Twitter</a>. In the event you're more interested in my professional background, you can always look me up through <a href='https://ca.linkedin.com/in/joshdrink' target='_blank'>LinkedIn</a>.</p>
-						<hr>
-
-					</div>
-
-					<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup" class='mailchimp'>
-						<form action="//joshbeveridge.us10.list-manage.com/subscribe/post?u=817b9240cae7f410d10e8cefb&amp;id=a7bd253489" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div id="mc_embed_signup_scroll">
-								<h2>Get Article Updates</h2>
-								<p>Subscribing will put the newest articles into your inbox. By submitting your info, you agree to receive updates about content published on this site. You can unsubscribe at any time using the link found in each email you receive.
-								<div class="mc-field-group">
-									<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-									</label>
-									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-								</div>
-								<div class="mc-field-group half">
-									<label for="mce-FNAME">First Name </label>
-									<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-								</div>
-								<div class="mc-field-group half right">
-									<label for="mce-LNAME">Last Name </label>
-									<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								<div style="position: absolute; left: -5000px;"><input type="text" name="b_817b9240cae7f410d10e8cefb_a7bd253489" tabindex="-1" value=""></div>
-								<div class="clear"><input class='half' type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							</div>
-						</form>
-					</div>
-					<!--End mc_embed_signup-->
-
-				</div>
-
-		    </section>
-
-		</div>
-
-	    <section class='menu'>
-	        <dl class='container'>
-	            <dt></dt>
-	            <dd><button id='navThink'><img src='<?php echo $stylesheet_directory ?>img/nav_pages.svg'></button></dd>
-				<dd><button class='disable' id='navBuild'><img src='<?php echo $stylesheet_directory ?>img/nav_build.svg'></button></dd>
-	            <dd><button id='navEnlist'><img src='<?php echo $stylesheet_directory ?>img/nav_love.svg'></button></dd>
-	            <dd>
-	                <button id='navClose' class='close'>
-	                    <img src='<?php echo $stylesheet_directory ?>img/icon_circle.svg'>
-	                    <div class='flipper'>
-	                        <img src='<?php echo $stylesheet_directory ?>img/icon_jb.svg'>
-	                        <img src='<?php echo $stylesheet_directory ?>img/icon_x.svg'>
-	                    </div>
-	                </button>
-	            </dd>
-	        </dl>
-	    </section>
+		<button class='button-menu' id='menuButton'>
+			<span>Menu</span>
+		</button>
 
 	</nav>

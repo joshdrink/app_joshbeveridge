@@ -1,0 +1,121 @@
+/* =============================================================================
+
+    // ARTICLE CSS
+    // Property of Josh Beveridge
+    // Authored by Josh Beveridge
+
+============================================================================= */
+
+/* Article ================================================================== */
+article {
+    margin: 0;
+    max-width: 100%;
+    opacity: 1;
+    position: relative;
+    transition: all .3s ease;
+    width: 100vw;
+
+    @media screen and (orientation:landscape) {
+        /*width: 85vw;*/
+
+        &.active {
+            transform: translate3d(-100%, 0, 0);
+            transition: transform .3s ease;
+        }
+
+    }
+
+    @media screen and (orientation:landscape) and (min-width: 768px) {
+        /*width: 90vw;*/
+
+        &.active {
+            transform: translate3d(-82%, 0, 0);
+            transition: transform .3s linear;
+        }
+
+    }
+
+    .content {
+        background: $off-grey;
+        padding: 0 0 5rem 0;
+        z-index: 10;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            padding: 0 0 8rem 0;
+        }
+
+        @media screen and (orientation: landscape) {
+            padding: 0 0 2rem 0;
+        }
+
+        .container {
+
+            img {
+                display: block;
+                height: auto !important;
+                margin: 2rem 0;
+                width: 100% !important;
+
+                @media screen and (orientation: landscape) {
+                    position: relative;
+                    left: -7.5%;
+                    max-width: 115% !important;
+                    width: 115% !important;
+                }
+
+            }
+
+            .date {
+                color: $grey-dark;
+                font-size: .7rem;
+                font-weight: 300;
+                text-align: center;
+                transition: all .3s ease;
+            }
+
+            .title {
+                color: $black;
+                font-weight: 900;
+                margin: 3rem 0;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    .social {
+        text-align: center;
+
+        dd {
+            display: block;
+            margin: 0 0 1rem 0;
+
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+                margin: 0 .5rem;
+            }
+
+            &:last-child {
+                margin: 0 3rem;
+
+                @media screen and (min-width: 768px) {
+                    margin: 0 .5rem;
+                }
+
+            }
+
+            i {
+                color: $black;
+                margin: 0 .5rem 0 0;
+            }
+
+        }
+
+    }
+
+    .tol {
+        text-align: center;
+    }
+
+}

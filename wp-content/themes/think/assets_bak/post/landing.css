@@ -1,0 +1,31 @@
+/* =============================================================================
+
+    // LANDING CSS
+    // Property of Josh Beveridge
+    // Authored by Josh Beveridge
+
+============================================================================= */
+
+/* Landing ================================================================== */
+
+/* Settings */
+@import 'spec/settings.css';
+
+/* Palette */
+@import 'spec/palette.css';
+
+/* Typography */
+@import 'spec/typography.css';
+
+/* Navigation =============================================================== */
+@import 'layout/navigation.css';
+
+/* Hero ===================================================================== */
+@import 'blocks/hero.css';
+
+/* Article ================================================================== */
+@import 'blocks/article.css';
+
+article {
+    /*border-top: 1px solid $black;*/
+}

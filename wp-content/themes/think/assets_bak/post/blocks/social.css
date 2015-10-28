@@ -1,0 +1,21 @@
+/* =============================================================================
+
+    // SOCIAL CSS
+    // Property of Josh Beveridge
+    // Authored by Josh Beveridge
+
+============================================================================= */
+
+/* Social Block ============================================================= */
+.social {
+    background: $white;
+    max-width: 100%;
+    padding: 0 0 5rem 0;
+    position: relative;
+    width: 100vw;
+
+    @media screen and (orientation:landscape) {
+        width: 90vw;
+    }
+
+}

@@ -1,0 +1,97 @@
+/* =============================================================================
+
+    // SETTINGS CSS
+    // Property of Josh Beveridge
+    // Authored by Josh Beveridge
+
+============================================================================= */
+
+/* Point Copy System ======================================================== */
+@media screen {
+    html,
+    body {
+        font-size: 12pt;
+    }
+}
+@media screen and (min-width: 768px) {
+    html,
+    body {
+        font-size: 16pt;
+    }
+}
+
+/* Common Styles ============================================================ */
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: rgba(251, 251, 250, 1);
+
+    &.stop {
+        overflow-y: hidden;
+    }
+
+}
+
+section {
+    background: rgba(251, 251, 250, 1);
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    background: rgba(251, 251, 250, 1);
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+    padding: 0;
+    width: 30rem;
+}
+
+/* Media ==================================================================== */
+.portrait {
+    display: block !important;
+
+    @media screen and (orientation:landscape) {
+        display: none !important;
+    }
+
+}
+
+.landscape {
+    display: none !important;
+
+    @media screen and (orientation:landscape) {
+        display: block !important;
+    }
+
+}
+
+/* Wrappers ================================================================= */
+.wrapper {
+    display: block;
+    position: relative;
+
+    &.center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+/* Mixins =================================================================== */
+@define-mixin translate3d($x,$y,$z) {
+    transform: translate($x,$y);
+    transform: translate3d($x,$y,$z);
+}
