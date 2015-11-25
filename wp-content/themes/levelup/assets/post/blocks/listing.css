@@ -184,6 +184,7 @@
     }
 
     &.design {
+        background: $white;
 
         .content-wrapper {
 
@@ -237,6 +238,7 @@
     }
 
     &.gaming {
+        background: $black;
 
         .content-wrapper {
 
