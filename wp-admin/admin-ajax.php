@@ -98,5 +98,6 @@ if ( is_user_logged_in() ) {
 	 */
 	do_action( 'wp_ajax_nopriv_' . $_REQUEST['action'] );
 }
+
 // Default status
 die( '0' );
