@@ -91,7 +91,7 @@
                 <div class='layout-wrapper'>
 
                     <div class='wrapper'>
-                        <button class='return-home'><i class='fa fa-chevron-left'></i> Return Home</button>
+                        <button class='return-home'><i class='fa fa-chevron-left'></i>Return Home</button>
                     </div>
 
                     <h1 class='section-title'>Josh, The Designer</h1>
@@ -151,7 +151,7 @@
                 <div class='layout-wrapper'>
 
                     <div class='wrapper'>
-                        <button class='return-home'><i class='fa fa-chevron-left'></i> Return Home</button>
+                        <button class='return-home'><i class='fa fa-chevron-left'></i>Return Home</button>
                     </div>
 
                     <h1 class='section-title'>Josh, The Gamer</h1>
@@ -211,7 +211,7 @@
                 <div class='layout-wrapper'>
 
                     <div class='wrapper'>
-                        <button class='return-to-list'>Return to the Listing</button>
+                        <button class='return-to-list'><i class='fa fa-chevron-left'></i>Return to the Listing</button>
                     </div>
 
                     <div class='article'></div>

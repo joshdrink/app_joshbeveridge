@@ -61,14 +61,10 @@
                     font-family: $font-roboto;
                     font-weight: 500;
                     text-decoration: underline;
-                }
 
-                .mobile-social {
-                    float: right;
-
-                    dd {
-                        display: inline-block;
-                        margin: 0 0 0 1rem;
+                    i {
+                        font-size: .8rem;
+                        margin: 0 .5rem 0 0;
                     }
 
                 }
