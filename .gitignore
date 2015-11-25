@@ -85,7 +85,6 @@ wp-content/*
 wp-content/plugins/hello.php
 
 # ignore node/grunt dependency directories
-/wp-content/themes/*/assets/bower_components
 /wp-content/themes/*/assets/node_modules
 
 # ignore wp-config file as it stores password
