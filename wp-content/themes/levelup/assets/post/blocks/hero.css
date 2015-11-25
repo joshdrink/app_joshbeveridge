@@ -312,7 +312,7 @@
         }
 
         button {
-            top: 50%;
+            top: 45%;
 
             @media $(landscape) {
                 left: 40%;
@@ -427,7 +427,7 @@
         }
 
         button {
-            top: 50%;
+            top: 55%;
 
             @media $(landscape) {
                 left: 60%;
