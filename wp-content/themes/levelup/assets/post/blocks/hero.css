@@ -315,6 +315,7 @@
             top: 45%;
 
             @media $(landscape) {
+                top: 50%;
                 left: 40%;
             }
 
@@ -430,6 +431,7 @@
             top: 55%;
 
             @media $(landscape) {
+                top: 50%;
                 left: 60%;
             }
 
