@@ -52,10 +52,10 @@
 				$postContent = get_the_content();
 
 				if(in_category("design")) {
-					$postLinkTemp = "http://joshbeveridge.com/#designer-post-".$postSlug;
+					$postLinkTemp = "/#designer-post-".$postSlug;
 				}
 				if(in_category("gaming")) {
-					$postLinkTemp = "http://joshbeveridge.com/#gamer-post-".$postSlug;
+					$postLinkTemp = "/#gamer-post-".$postSlug;
 				}
 
 				$postLink = urlencode($postLinkTemp);
@@ -105,10 +105,10 @@
 			$postContent = get_the_content();
 
 			if(in_category("design")) {
-				$postLinkTemp = "http://joshbeveridge.com/#designer-post-".$postSlug;
+				$postLinkTemp = "/#designer-post-".$postSlug;
 			}
 			if(in_category("gaming")) {
-				$postLinkTemp = "http://joshbeveridge.com/#gamer-post-".$postSlug;
+				$postLinkTemp = "/#gamer-post-".$postSlug;
 			}
 
 			$postLink = urlencode($postLinkTemp);
