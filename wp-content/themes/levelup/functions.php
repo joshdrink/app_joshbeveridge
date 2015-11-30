@@ -144,6 +144,20 @@
 
 	// Custom Ellipsis =========================================================
 	function new_excerpt_more( $more ) {
-		return ' [Read.]';
+
+		$postSlug = basename(get_the_permalink());
+		$postID = get_the_ID();
+
+		if(in_category("design")) {
+			$postLinkTemp = "/#designer-post-".$postSlug;
+			$postCategory = "designer";
+		}
+		if(in_category("gaming")) {
+			$postLinkTemp = "/#gamer-post-".$postSlug;
+			$postCategory = "gamer";
+		}
+
+		return "... <a href='".$postLinkTemp."' class='get-post ".$postCategory."' data-postid='".$postID."'> [Read More]</a>";
+
 	}
 	add_filter('excerpt_more', 'new_excerpt_more');
