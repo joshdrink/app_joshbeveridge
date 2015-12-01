@@ -52,10 +52,10 @@
 				$postContent = get_the_content();
 
 				if(in_category("design")) {
-					$postLinkTemp = "/#designer-post-".$postSlug;
+					$postLinkTemp = "http://joshbeveridge.com/#designer-post-".$postSlug;
 				}
 				if(in_category("gaming")) {
-					$postLinkTemp = "/#gamer-post-".$postSlug;
+					$postLinkTemp = "http://joshbeveridge.com/#gamer-post-".$postSlug;
 				}
 
 				$postLink = urlencode($postLinkTemp);
@@ -105,10 +105,10 @@
 			$postContent = get_the_content();
 
 			if(in_category("design")) {
-				$postLinkTemp = "/#designer-post-".$postSlug;
+				$postLinkTemp = "http://joshbeveridge.com/#designer-post-".$postSlug;
 			}
 			if(in_category("gaming")) {
-				$postLinkTemp = "/#gamer-post-".$postSlug;
+				$postLinkTemp = "http://joshbeveridge.com/#gamer-post-".$postSlug;
 			}
 
 			$postLink = urlencode($postLinkTemp);
@@ -149,15 +149,15 @@
 		$postID = get_the_ID();
 
 		if(in_category("design")) {
-			$postLinkTemp = "/#designer-post-".$postSlug;
+			$postLinkTemp = "http://joshbeveridge.com/#designer-post-".$postSlug;
 			$postCategory = "designer";
 		}
 		if(in_category("gaming")) {
-			$postLinkTemp = "/#gamer-post-".$postSlug;
+			$postLinkTemp = "http://joshbeveridge.com/#gamer-post-".$postSlug;
 			$postCategory = "gamer";
 		}
 
-		return "... <a href='".$postLinkTemp."' class='get-post ".$postCategory."' data-postid='".$postID."'> [Read More]</a>";
+		return "... <a href='".$postLinkTemp."' class='get-post ".$postCategory."' data-postid='".$postID."'> Read More</a>";
 
 	}
 	add_filter('excerpt_more', 'new_excerpt_more');

@@ -16,7 +16,7 @@
 	<!-- Site Meta Data ==================================================== -->
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title><?php wp_title(); ?></title>
+	<title>Josh Beveridge</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -54,7 +54,7 @@
 	<meta name="theme-color" content="#e1193c">
 
 	<!-- Google Fonts ====================================================== -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,700,700italic,900|Roboto+Condensed:400,700,300|Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,500,900,300,100|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Typekit =========================================================== -->
 	<script src="//use.typekit.net/osi6lyk.js"></script>

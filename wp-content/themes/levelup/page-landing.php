@@ -121,7 +121,7 @@
                                     <h3><?php the_title() ?></h3>
                                 </button>
                                 <span>Published on <?php echo get_the_date('l, F j, Y') ?></span>
-                                <a href='https://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' id='#' alt='Words Per Minute'><?php echo $postLength ?> minute read</a>
+                                <a href='https://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' class='wpm' alt='Words Per Minute'><?php echo $postLength ?> minute read</a>
                                 <?php the_excerpt() ?>
                             </dd>
 
@@ -181,7 +181,7 @@
                                     <h3><?php the_title() ?></h3>
                                 </button>
                                 <span>Published on <?php echo get_the_date('l, F j, Y') ?></span>
-                                <a href='https://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' id='#' alt='Words Per Minute'><?php echo $postLength ?> minute read</a>
+                                <a href='https://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension' class='wpm' alt='Words Per Minute'><?php echo $postLength ?> minute read</a>
                                 <?php the_excerpt() ?>
                             </dd>
 
@@ -226,6 +226,8 @@
                             <dd><a id='linkedinLink' target='_blank'><i class='fa fa-linkedin'></i>Share This</a></dd>
                             <dd><a id='facebookLink' target='_blank'><i class='fa fa-facebook'></i>Get Likes</a></dd>
                         </dl>
+
+                        <hr>
 
                         <h3 class='tol'>Do great things.</h3>
 

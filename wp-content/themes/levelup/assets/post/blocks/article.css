@@ -120,6 +120,11 @@
                 margin: 0 5vw 0 0;
             }
 
+            @media $(cinema) {
+                float: right;
+                margin: 0 10vw 0 0;
+            }
+
         }
 
     }
@@ -132,6 +137,10 @@
 
                 @media $(tablet-landscape) {
                     margin: 0 0 0 5vw;
+                }
+
+                @media $(cinema) {
+                    margin: 0 0 0 10vw;
                 }
 
             }

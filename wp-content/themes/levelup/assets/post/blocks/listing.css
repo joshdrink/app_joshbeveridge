@@ -140,7 +140,7 @@
                         text-decoration: none;
                     }
 
-                    a {
+                    .wpm {
                         display: block;
                         font-family: $font-roboto;
                         font-size: .7rem;
@@ -195,6 +195,10 @@
                     margin: 0 5vw 0 0;
                 }
 
+                @media $(cinema) {
+                    margin: 0 10vw 0 0;
+                }
+
             }
 
             .section-title {
@@ -246,6 +250,10 @@
 
                 @media $(tablet-landscape) {
                     margin: 0 0 0 5vw;
+                }
+
+                @media $(cinema) {
+                    margin: 0 0 0 10vw;
                 }
 
             }
