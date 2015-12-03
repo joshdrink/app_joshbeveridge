@@ -94,7 +94,7 @@
                         <button class='return-home'><i class='fa fa-chevron-left'></i>Return Home</button>
                     </div>
 
-                    <h1 class='section-title'>Josh, The Designer</h1>
+                    <h1 class='section-title'>Josh, the Designer</h1>
 
                     <div class='social'>
                         <a href='https://twitter.com/joshdrink' alt='Twitter'><i class='fa fa-twitter'></i>On Twitter</a>
@@ -154,7 +154,7 @@
                         <button class='return-home'><i class='fa fa-chevron-left'></i>Return Home</button>
                     </div>
 
-                    <h1 class='section-title'>Josh, The Gamer</h1>
+                    <h1 class='section-title'>Josh, the Gamer</h1>
 
                     <div class='social'>
                         <a href='https://twitter.com/joshdrink' alt='Twitter'><i class='fa fa-twitter'></i>On Twitter</a>
@@ -222,9 +222,9 @@
 
                         <dl>
                             <dt></dt>
-                            <dd><a id='twitterLink' target='_blank'><i class='fa fa-twitter'></i>#HashtagIt</a></dd>
-                            <dd><a id='linkedinLink' target='_blank'><i class='fa fa-linkedin'></i>Share This</a></dd>
-                            <dd><a id='facebookLink' target='_blank'><i class='fa fa-facebook'></i>Get Likes</a></dd>
+                            <dd><a id='twitterLink' target='_blank'><i class='fa fa-twitter'></i>Twitter</a></dd>
+                            <dd><a id='linkedinLink' target='_blank'><i class='fa fa-linkedin'></i>Linkedin</a></dd>
+                            <dd><a id='facebookLink' target='_blank'><i class='fa fa-facebook'></i>Facebook</a></dd>
                         </dl>
 
                         <hr>

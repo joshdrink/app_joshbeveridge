@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16044) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#E1193C" stop-opacity="0.95" offset="0%"></stop>
+            <stop stop-color="#E1193C" stop-opacity="0.903843976" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <rect id="Rectangle-1" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup" x="0" y="0" width="600" height="600"></rect>
+            <path d="M0,600 L600,600 L600,0 L300,300 L0,0 L0,600 Z" id="Path-1" fill-opacity="0.05" fill="#1EFF00" sketch:type="MSShapeGroup"></path>
+            <path d="M599.999999,600.000004 L-7.75179274e-07,-2.72680643e-06 L-7.75179274e-07,599.999995 L599.999999,600.000004 Z" id="Path-2" fill-opacity="0.199999988" fill="#00FBFF" sketch:type="MSShapeGroup"></path>
+            <path d="M449.999997,450.000003 L149.999997,149.999997 L-150.000003,449.999994 L449.999997,450.000003 Z" id="Path-2" fill-opacity="0.199999988" fill="#00FBFF" sketch:type="MSShapeGroup"></path>
+            <path d="M299.999997,600.000003 L-3.48783834e-06,299.999997 L-3.48783834e-06,599.999997 L299.999997,600.000003 Z" id="Path-2" fill-opacity="0.199999988" fill="#00FBFF" sketch:type="MSShapeGroup"></path>
+            <path d="M225,375 L75,225 L75,525 L225,375 Z" id="Path-2" fill-opacity="0.199999988" fill="#00FBFF" sketch:type="MSShapeGroup"></path>
+            <path d="M300,450 L150,300 L150,450 L300,450 Z" id="Path-2" fill-opacity="0.199999988" fill="#00FBFF" sketch:type="MSShapeGroup"></path>
+            <path d="M600.000003,600.000003 L3.48783846e-06,-4.2488702e-06 L3.48783846e-06,599.999993 L600.000003,600.000003 Z" id="Path-2" fill-opacity="0.200000003" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(300.000003, 299.999999) rotate(-180.000000) translate(-300.000003, -299.999999) "></path>
+            <path d="M750.000006,450.000003 L450.000006,149.999997 L150.000006,449.999994 L750.000006,450.000003 Z" id="Path-2" fill-opacity="0.200000003" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(450.000006, 300.000000) rotate(-180.000000) translate(-450.000006, -300.000000) "></path>
+            <path d="M600.000006,300.000003 L300.000006,-3.48783831e-06 L300.000006,299.999997 L600.000006,300.000003 Z" id="Path-2" fill-opacity="0.200000003" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(450.000006, 150.000000) rotate(-180.000000) translate(-450.000006, -150.000000) "></path>
+            <path d="M525.000003,225 L375.000003,75 L375.000003,375 L525.000003,225 Z" id="Path-2" fill-opacity="0.200000003" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(450.000003, 225.000000) rotate(-180.000000) translate(-450.000003, -225.000000) "></path>
+            <path d="M450.000003,300 L300.000003,150 L300.000003,300 L450.000003,300 Z" id="Path-2" fill-opacity="0.200000003" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(375.000003, 225.000000) rotate(-180.000000) translate(-375.000003, -225.000000) "></path>
+        </g>
+    </g>
+</svg>

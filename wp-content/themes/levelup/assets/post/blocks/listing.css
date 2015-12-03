@@ -36,8 +36,6 @@
                 max-width: 35rem;
             }
 
-            >.wrapper,
-            .section-title,
             .section-summary,
             >input,
             .article-list,
@@ -49,7 +47,9 @@
             }
 
             >.wrapper {
-                margin: 2rem auto;
+                margin: 0;
+                padding: 2rem;
+                width: 100%;
 
                 @media $(tablet-landscape) {
                     display: none;
@@ -74,14 +74,19 @@
             .section-title {
                 font-family: $font-roboto-cdn;
                 font-size: 2.3rem;
-                font-weight: 700;
+                font-weight: 900;
                 line-height: 1;
-                margin: 2rem auto;
+                margin: 0;
+                padding: 0 2rem 2rem 2rem;
                 text-align: center;
                 text-transform: uppercase;
+                width: 100%;
 
                 @media $(tablet-landscape) {
-                    margin: 4rem auto 2rem auto;
+                    padding: 4rem 2rem 2rem 2rem;
+                    margin: 0 auto 2rem auto;
+                    max-width: 85%;
+                    width: 30rem;
                 }
 
             }
@@ -90,6 +95,8 @@
                 text-align: center;
 
                 a {
+                    font-family: $font-roboto;
+                    font-weight: 500;
                     margin: 0 1rem;
                 }
 
@@ -105,7 +112,7 @@
 
             input {
                 background: none;
-                font-family: $font-roboto-cdn;
+                font-family: $font-roboto;
                 margin: 2rem auto;
                 padding: .5rem;
             }
@@ -113,7 +120,6 @@
             .article-list {
 
                 dd {
-                    border-bottom: 1px solid $red;
                     margin: 0 0 2rem 0;
                     padding: 0 0 2rem 0;
 
@@ -121,10 +127,10 @@
                         display: block;
                         color: $red;
                         text-align: left;
-                        text-decoration: underline;
+                        /*text-decoration: underline;*/
 
                         h3 {
-                            color: $red;
+                            /*color: $red;*/
                             margin: 0 0 1rem 0;
                             text-align: left;
                         }
@@ -202,7 +208,10 @@
             }
 
             .section-title {
-                color: $copy;
+                /*background: $black;*/
+                /*border: 1px solid $black;*/
+                /*border-top: none;*/
+                color: $title;
             }
 
             .social {
@@ -215,11 +224,13 @@
 
             input {
                 border: 1px solid $black;
+                color: $copy;
             }
 
             .article-list {
 
                 dd {
+                    border-bottom: 1px solid $black;
 
                     span {
                         color: $copy;
@@ -259,32 +270,43 @@
             }
 
             .section-title {
-                color: $white;
+                /*border: 1px solid $white;*/
+                /*border-top: none;*/
+                color: $title-light;
             }
 
             .social {
 
                 i {
-                    color: $white;
+                    color: $copy-light;
                 }
 
             }
 
             input {
                 border: 1px solid $white;
-                color: $white;
+                color: $copy-light;
             }
 
             .section-summary {
-                color: $white;
+                color: $copy-light;
             }
 
             .article-list {
 
                 dd {
+                    border-bottom: 1px solid $white;
+
+                    button {
+
+                        h3 {
+                            color: $title-light;
+                        }
+
+                    }
 
                     span {
-                        color: $white;
+                        color: $copy-light;
                     }
 
                     >a {
@@ -292,7 +314,7 @@
                     }
 
                     p {
-                        color: $white;
+                        color: $copy-light;
                     }
 
                 }
@@ -300,7 +322,7 @@
             }
 
             .section-false {
-                color: $white;
+                color: $title-light;
             }
 
         }

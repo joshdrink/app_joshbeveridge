@@ -54,11 +54,7 @@
 	<meta name="theme-color" content="#e1193c">
 
 	<!-- Google Fonts ====================================================== -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,500,900,300,100|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
-
-	<!-- Typekit =========================================================== -->
-	<script src="//use.typekit.net/osi6lyk.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Roboto:400,100,300,500,700,900|Roboto+Condensed:400,700,300|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- wp_head =========================================================== -->
 	<?php wp_head(); ?>

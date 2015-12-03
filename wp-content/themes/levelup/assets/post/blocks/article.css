@@ -146,7 +146,7 @@
             }
 
             h1 {
-                color: $white;
+                color: $title-light;
             }
 
             .article {
@@ -156,16 +156,19 @@
                 }
 
                 h1, h2, h3, h4, h5, h6 {
-                    color: $white;
+                    color: $title-light;
                 }
 
                 p,
-                strong,
                 em,
                 span,
                 blockquote,
                 article {
-                    color: $white;
+                    color: $copy-light;
+                }
+
+                strong {
+                    color: $strong-light;
                 }
 
             }

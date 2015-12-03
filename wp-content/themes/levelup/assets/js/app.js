@@ -132,6 +132,23 @@
 
         hashURL();
 
+        // Internal Link Handler ===============================================
+        // $('a').on('click', function(e){
+        //
+        //     e.preventDefault();
+        //
+        //     var linkIntent = $(this).attr('href');
+        //     var mySite = "joshbeveridge.com";
+        //
+        //     if(mySite.indexOf(linkIntent) >= 0) {
+        //         console.log('HEY!');
+        //     }
+        //     else {
+        //         $(this).unbind('click');
+        //     }
+        //
+        // });
+
         // AJAX Loader
         $(document).ajaxStart(function () {
             $('.loader').addClass('active');;

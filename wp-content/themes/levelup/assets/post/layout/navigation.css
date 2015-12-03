@@ -79,8 +79,10 @@
         left: 0;
         transform: translate(0, 100%);
 
-        p {
-            font-size: .7rem;
+        p,
+        strong {
+            font-size: .6rem;
+            line-height: 1.7;
             margin: 0;
         }
 
@@ -130,17 +132,17 @@
         }
 
         h1 {
-            color: $white;
+            color: $title-light;
         }
 
         .content-wrapper {
 
             p {
-                color: $white;
+                color: $copy-light;
             }
 
             strong {
-                color: $white;
+                color: $strong-light;
             }
 
         }
